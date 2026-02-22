@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Services | Temahux Digital Growth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#460ce4",
+                        "accent": "#DEC178",
+                        "background-dark": "#0F1014",
+                        "card-dark": "#15161C",
+                        "border-dark": "#2A2B35"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-dark text-slate-100 font-display min-h-screen flex flex-col selection:bg-primary selection:text-white">
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 w-full border-b border-white/5 bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="logo-crop logo-dark group-hover:scale-105 transition-transform"></div>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium text-white" href="services.html">Services</a>
+                    <a class="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+                        href="products.html">Products</a>
+                    <a class="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+                        href="academy.html">Academy</a>
+                    <a class="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+                        href="about.html">About</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="contact.html"
+                        class="hidden md:flex items-center justify-center h-10 px-6 rounded-lg bg-primary hover:bg-primary/90 text-white text-sm font-bold transition-all shadow-lg">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-24 lg:pt-32 lg:pb-32 px-4">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-sm">
+                <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                <span class="text-xs font-semibold uppercase text-accent">Precision Growth</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8">
+                Data-Driven <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">Services</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Strategic marketing, SEO, and analytics designed to scale your enterprise in a hybrid digital ecosystem.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#packages"
+                    class="w-full sm:w-auto h-12 px-8 rounded-lg bg-primary text-white font-bold flex items-center justify-center gap-2">
+                    View Packages
+                </a>
+                <a href="contact.html"
+                    class="w-full sm:w-auto h-12 px-8 rounded-lg bg-white/5 border border-white/10 text-white font-bold flex items-center justify-center gap-2">
+                    Book Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-20 bg-background-dark/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl glass-card">
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6 text-primary">
+                        <span class="material-symbols-outlined">analytics</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Strategic SEO</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Dominate search rankings with our
+                        precision-engineered keyword and content strategies.</p>
+                </div>
+                <div class="p-8 rounded-2xl glass-card">
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6 text-primary">
+                        <span class="material-symbols-outlined">hub</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">PPC Management</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Maximize ROI with data-backed paid advertising
+                        across all major digital platforms.</p>
+                </div>
+                <div class="p-8 rounded-2xl glass-card">
+                    <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6 text-primary">
+                        <span class="material-symbols-outlined">admin_panel_settings</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Market Intel</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Deep-dive competitor analysis and market
+                        positioning for sustained growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="packages" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Growth Packages</h2>
+                <p class="text-slate-400">Select the tier that aligns with your scaling goals.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                <!-- Starter -->
+                <div class="p-8 rounded-2xl glass-card flex flex-col">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-4">Starter</h3>
+                    <div class="text-4xl font-extrabold text-white mb-6">$999<span
+                            class="text-sm text-slate-500 font-medium">/mo</span></div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-lg">check_circle</span> SEO
+                            Foundation</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-lg">check_circle</span> Social Media
+                            Setup</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-lg">check_circle</span> Monthly
+                            Reporting</li>
+                    </ul>
+                    <a href="contact.html"
+                        class="w-full h-12 rounded-lg bg-white/5 border border-white/10 text-white font-bold flex items-center justify-center">Get
+                        Started</a>
+                </div>
+                <!-- Accelerator -->
+                <div class="p-8 rounded-2xl glass-card border-primary/50 flex flex-col scale-105 z-10 bg-primary/5">
+                    <div class="mb-2"><span
+                            class="bg-accent text-slate-900 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Most
+                            Popular</span></div>
+                    <h3 class="text-lg font-semibold text-accent mb-4">Accelerator</h3>
+                    <div class="text-5xl font-extrabold text-white mb-6">$2,499<span
+                            class="text-sm text-slate-500 font-medium">/mo</span></div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center gap-3 text-sm text-white font-medium"><span
+                                class="material-symbols-outlined text-accent text-lg">check_circle</span> Advanced SEO
+                            &amp; Content</li>
+                        <li class="flex items-center gap-3 text-sm text-white font-medium"><span
+                                class="material-symbols-outlined text-accent text-lg">check_circle</span> PPC Ads
+                            Management</li>
+                        <li class="flex items-center gap-3 text-sm text-white font-medium"><span
+                                class="material-symbols-outlined text-accent text-lg">check_circle</span> Competitor
+                            Analysis</li>
+                    </ul>
+                    <a href="contact.html"
+                        class="w-full h-12 rounded-lg bg-primary text-white font-bold flex items-center justify-center">Scale
+                        Now</a>
+                </div>
+                <!-- Enterprise -->
+                <div class="p-8 rounded-2xl glass-card flex flex-col">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-4">Enterprise</h3>
+                    <div class="text-4xl font-extrabold text-white mb-6">$4,999<span
+                            class="text-sm text-slate-500 font-medium">/mo</span></div>
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-lg">check_circle</span> Full Digital
+                            Transformation</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-lg">check_circle</span> Dedicated
+                            Account Manager</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><span
+                                class="material-symbols-outlined text-primary text-lg">check_circle</span> Custom SaaS
+                            Integration</li>
+                    </ul>
+                    <a href="contact.html"
+                        class="w-full h-12 rounded-lg bg-white/5 border border-white/10 text-white font-bold flex items-center justify-center">Dominate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-white/5 bg-[#0b0c10] py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-500 text-sm">© 2024 Temahux. Building the digital backbone for institutions.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

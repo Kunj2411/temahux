@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact Us | Temahux Consultation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#460ce4",
+                        "background-dark": "#151022",
+                        "surface-dark": "#1e1730"
+                    },
+                    fontFamily: { "display": ["Manrope", "sans-serif"] }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-dark text-slate-100 font-display min-h-screen flex flex-col selection:bg-primary selection:text-white">
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 w-full border-b border-white/5 bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="logo-crop logo-dark group-hover:scale-105 transition-transform"></div>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+                        href="services.html">Services</a>
+                    <a class="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+                        href="products.html">Products</a>
+                    <a class="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+                        href="academy.html">Academy</a>
+                    <a class="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+                        href="about.html">About</a>
+                </nav>
+                <a href="contact.html"
+                    class="bg-primary hover:bg-primary/90 text-white text-sm font-bold px-4 py-2 rounded-lg transition-all">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center py-20 px-4">
+        <div class="max-w-5xl w-full grid md:grid-cols-2 gap-12 glass-card p-10 rounded-3xl relative overflow-hidden">
+            <div class="z-10">
+                <h2 class="text-accent text-sm font-bold uppercase tracking-widest mb-4">Contact</h2>
+                <h1 class="text-4xl font-black mb-6">Let's build your <span
+                        class="text-primary italic">ecosystem</span>.</h1>
+                <p class="text-slate-400 mb-10 leading-relaxed max-w-sm">
+                    Ready to transform your digital presence? Fill out the form or reach out directly to schedule a
+                    demo.
+                </p>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">mail</span>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-500 uppercase font-bold">Email</div>
+                            <div class="text-sm font-bold">growth@temahux.com</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">public</span>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-500 uppercase font-bold">Location</div>
+                            <div class="text-sm font-bold">San Francisco, CA & London, UK</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="z-10 flex flex-col gap-4">
+                <input
+                    class="w-full bg-background-dark/50 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-slate-500 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                    placeholder="Your Name" type="text" />
+                <input
+                    class="w-full bg-background-dark/50 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-slate-500 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                    placeholder="Work Email" type="email" />
+                <select
+                    class="w-full bg-background-dark/50 border border-white/10 rounded-xl px-4 py-4 text-slate-100 focus:border-primary focus:ring-1 focus:ring-primary outline-none appearance-none">
+                    <option>SaaS Products Interest</option>
+                    <option>Growth Services</option>
+                    <option>Academy Enrollment</option>
+                    <option>Other</option>
+                </select>
+                <textarea
+                    class="w-full bg-background-dark/50 border border-white/10 rounded-xl px-4 py-4 text-white placeholder-slate-500 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all min-h-[120px]"
+                    placeholder="How can we help?"></textarea>
+                <button type="button"
+                    class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-lg transition-all active:scale-95">Send
+                    Request</button>
+            </form>
+
+            <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl -z-0"></div>
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-white/5 bg-surface-darker/50">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-500 text-xs">© 2024 Temahux Ecosystem. Rapid Deployment. Verified Experts.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
