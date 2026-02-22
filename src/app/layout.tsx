@@ -24,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <meta name="google-site-verification" content="EqVw9MIRlBS76px2XiIEjCTLeYE1lubAd3eaNhlUGvw" />
+      </head>
       <body className={`${inter.variable} ${manrope.variable} antialiased`}>
         {children}
       </body>
