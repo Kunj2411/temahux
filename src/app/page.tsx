@@ -1,82 +1,76 @@
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
+import Pillar from "@/components/ui/Pillar";
+import ModelCard from "@/components/ui/ModelCard";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-surface-dark overflow-hidden flex flex-col md:flex-row">
-      {/* Pillar 1: Digital Growth Services */}
-      <Pillar
-        title="Digital Growth Services"
-        subtitle="Growth Infrastructure"
-        description="Strategic marketing systems for venture-backed scale. Funnel engineering & SEO architecture."
-        href="/services"
-        color="bg-primary"
-        tag="High-Ticket B2B"
-      />
+    <main className="relative min-h-screen bg-surface-dark overflow-x-hidden flex flex-col">
+      {/* Three Pillars Hero Layer */}
+      <div className="flex flex-col md:flex-row min-h-screen">
+        <Pillar
+          title="Digital Growth Services"
+          subtitle="Growth Infrastructure"
+          description="Strategic growth frameworks for scale-ready firms. Engagement models engineered for precision."
+          href="/services"
+          color="bg-primary"
+          tag="Strategic B2B"
+        />
 
-      {/* Pillar 2: SaaS Products */}
-      <Pillar
-        title="Intelligent SaaS Products"
-        subtitle="Institutional Systems"
-        description="Standalone software ecosystems for universities. AI grading & campus-wide OS."
-        href="/products"
-        color="bg-trust"
-        tag="Infrastructure"
-      />
+        <Pillar
+          title="Intelligent SaaS Products"
+          subtitle="Institutional Systems"
+          description="Modular software ecosystems for complex institutions. Now in Pilot Phase."
+          href="/products"
+          color="bg-trust"
+          tag="SaaS Hub"
+        />
 
-      {/* Pillar 3: Academy Platform */}
-      <Pillar
-        title="Temahux Academy"
-        subtitle="Skill Engine"
-        description="Structured career acceleration tracks. Industrial-strength certification engine."
-        href="/academy"
-        color="bg-white"
-        isLight
-        tag="Career Growth"
-      />
-    </main>
-  );
-}
-
-function Pillar({ title, subtitle, description, href, color, tag, isLight = false }: any) {
-  return (
-    <Link
-      href={href}
-      className={`relative flex-1 group overflow-hidden flex flex-col justify-end p-8 md:p-16 transition-all duration-700 hover:flex-[1.5] ${color}`}
-    >
-      {/* Background Effects */}
-      <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-[url('/grid.svg')] ${isLight ? 'invert' : ''}`}></div>
-
-      <div className="relative z-10 flex flex-col gap-4">
-        <span className={`text-[10px] font-black uppercase tracking-[0.2em] px-2 py-1 rounded w-fit ${isLight ? 'bg-primary text-white' : 'bg-white/10 text-accent'}`}>
-          {tag}
-        </span>
-
-        <div className="flex flex-col">
-          <h3 className={`text-xs font-bold uppercase tracking-widest ${isLight ? 'text-primary' : 'text-accent'}`}>
-            {subtitle}
-          </h3>
-          <h2 className={`text-4xl lg:text-5xl font-black leading-tight mt-2 ${isLight ? 'text-surface-dark' : 'text-white'}`}>
-            {title}
-          </h2>
-        </div>
-
-        <p className={`text-sm lg:text-base max-w-sm font-medium leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0 ${isLight ? 'text-surface-base' : 'text-slate-400'}`}>
-          {description}
-        </p>
-
-        <div className="mt-8 flex items-center gap-2 group/btn">
-          <span className={`text-xs font-black uppercase tracking-widest ${isLight ? 'text-surface-dark' : 'text-white'}`}>
-            Enter Vertical
-          </span>
-          <div className={`h-[1px] w-12 transition-all duration-500 group-hover/btn:w-20 ${isLight ? 'bg-surface-dark' : 'bg-white'}`}></div>
-        </div>
+        <Pillar
+          title="Temahux Academy"
+          subtitle="Skill Engine"
+          description="Career acceleration tracks for digital architects. Launching Cohort 01."
+          href="/academy"
+          color="bg-white"
+          isLight
+          tag="Global Academy"
+        />
       </div>
 
-      {/* Hover Gradient Overlay */}
-      <div className={`absolute inset-0 bg-gradient-to-t pointer-events-none opacity-60 ${isLight ? 'from-white via-transparent' : 'from-black via-transparent'}`}></div>
-    </Link>
+      {/* The Temahux Operating Model - Philosophy Section */}
+      <section className="py-24 px-6 md:px-12 bg-surface-dark border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
+            <div className="max-w-2xl">
+              <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-6">
+                The Temahux <br />
+                <span className="text-accent italic">Operating Model.</span>
+              </h2>
+              <p className="text-slate-400 text-lg leading-relaxed">
+                We don't build websites; we engineer institutional infrastructure. Our model connects strategic growth services with scalable SaaS products and high-intensity education.
+              </p>
+            </div>
+            <Link href="/architecture" className="flex items-center gap-3 group/arch">
+              <span className="text-xs font-black uppercase tracking-widest group-hover/arch:text-primary transition-colors">Explore Architecture</span>
+              <div className="size-10 rounded-full border border-white/10 flex items-center justify-center group-hover/arch:border-primary transition-all">→</div>
+            </Link>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-12">
+            <ModelCard
+              title="System-Driven"
+              description="Everything connects. Our services feed our products, and our products scale with our academy's talent pipeline."
+            />
+            <ModelCard
+              title="Intelligence-First"
+              description="AI is not an add-on; it is the core assessment and automation layer embedded in every modular system we deploy."
+            />
+            <ModelCard
+              title="Build for Scale"
+              description="Engineered for institutions ready to modernize without the noise. Precision frameworks for predictable outcomes."
+            />
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
