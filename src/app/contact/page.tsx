@@ -22,9 +22,9 @@ export default function ContactPage() {
                             </p>
 
                             <div className="space-y-8">
-                                <ContactDetail label="Global HQ" content="Innovation District, Block 4" delay={0.1} />
-                                <ContactDetail label="Direct Dial" content="+1 (800) TEMAHUX" delay={0.2} />
-                                <ContactDetail label="Email" content="strategic@temahux.com" delay={0.3} />
+                                <ContactDetail label="Global HQ" content="Gandhinagar, India" delay={0.1} />
+                                <ContactDetail label="Direct Dial" content="+91 9104578807" delay={0.2} />
+                                <ContactDetail label="Email" content="kunj.joshi@temahux.com" delay={0.3} />
                             </div>
                         </div>
                     </FadeIn>

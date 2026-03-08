@@ -7,91 +7,220 @@ export default function AcademyPage() {
         <div className="min-h-screen bg-surface-light text-surface-dark selection:bg-lavender">
             <Navbar />
 
-            {/* Hero: Skill Engine */}
+            {/* Hero Section */}
             <section className="pt-40 pb-20 px-6 bg-white border-b border-slate-200">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-                    <div className="flex-1">
-                        <FadeIn direction="right">
-                            <div>
-                                <span className="text-xs font-black uppercase tracking-[0.3em] text-primary mb-6 block">
-                                    Institutional Talent Engine
-                                </span>
-                                <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-8 leading-[0.9] max-w-2xl">
-                                    Master the <br />
-                                    Digital <span className="text-primary italic">Scaffold.</span>
-                                </h1>
-                                <p className="text-lg text-slate-500 mb-10 leading-relaxed max-w-xl">
-                                    Structured certification tracks designed for the architects of the next digital decade. We replace course-taking with high-intensity skill engineering.
-                                </p>
-                                <div className="flex flex-col sm:flex-row gap-4">
-                                    <Link href="/academy/track-structure" className="px-10 py-5 bg-primary text-white font-black uppercase text-xs tracking-widest rounded-button hover:bg-surface-dark transition-all shadow-xl text-center">
-                                        Explore Model
-                                    </Link>
-                                    <div className="p-4 bg-slate-50 border border-slate-100 rounded">
-                                        <span className="block text-[10px] font-black uppercase tracking-widest text-slate-400">Status</span>
-                                        <span className="text-primary font-bold text-xs">Launching Cohort 01 (Founding Batch)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </FadeIn>
-                    </div>
-                    <FadeIn delay={0.2} className="flex-1">
-                        <div className="bg-slate-50 border border-slate-200 p-12 rounded-card h-full">
-                            <h4 className="text-xs font-black uppercase tracking-widest text-slate-400 mb-8">The Academy Vision</h4>
-                            <p className="text-slate-600 text-sm leading-relaxed mb-6">"Most graduates are trained for yesterday's interfaces. Our Academy is built to produce the architects who will build tomorrow's infrastructures."</p>
-                            <div className="space-y-4">
-                                <span className="block text-[9px] font-black uppercase text-slate-400">Certification Tracks</span>
-                                <ul className="text-xs font-bold space-y-2">
-                                    <li className="flex items-center gap-2"><div className="size-1.5 bg-primary rounded-full"></div> Growth Architect</li>
-                                    <li className="flex items-center gap-2"><div className="size-1.5 bg-primary rounded-full"></div> SaaS Product Strategist</li>
-                                    <li className="flex items-center gap-2"><div className="size-1.5 bg-primary rounded-full"></div> AI Systems Engineer</li>
-                                </ul>
-                            </div>
+                <div className="max-w-7xl mx-auto text-center">
+                    <FadeIn>
+                        <span className="text-xs font-black uppercase tracking-[0.3em] text-primary mb-6 block">
+                            Career Acceleration Platform
+                        </span>
+                    </FadeIn>
+                    <FadeIn delay={0.1}>
+                        <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-8 leading-tight">
+                            Temahux <br />
+                            <span className="text-primary italic">Academy</span>
+                        </h1>
+                    </FadeIn>
+                    <FadeIn delay={0.2}>
+                        <p className="text-lg md:text-xl text-slate-500 mb-12 max-w-3xl mx-auto leading-relaxed">
+                            Hands-on programs to master AI systems, SaaS development, and digital growth. Learn by building real products with industry mentors.
+                        </p>
+                    </FadeIn>
+                    <FadeIn delay={0.3}>
+                        <div className="inline-flex items-center gap-3 px-6 py-3 bg-primary/10 border border-primary/30 rounded-button">
+                            <span className="relative flex h-3 w-3">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+                            </span>
+                            <span className="text-xs font-black uppercase tracking-widest text-primary">
+                                Coming Soon
+                            </span>
                         </div>
                     </FadeIn>
                 </div>
             </section>
 
-            {/* Progression Sections */}
+            {/* Upcoming Programs */}
             <section className="py-24 px-6 bg-slate-50">
-                <div className="max-w-7xl mx-auto text-center">
+                <div className="max-w-7xl mx-auto">
                     <FadeIn>
-                        <h2 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-16">The Progression Model</h2>
+                        <h2 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-4">
+                            Upcoming Programs
+                        </h2>
+                        <p className="text-3xl md:text-5xl font-black tracking-tight mb-16">
+                            Build your <span className="text-primary italic">future career.</span>
+                        </p>
                     </FadeIn>
-                    <div className="grid md:grid-cols-3 gap-8 text-left">
-                        <ProgressionCard
-                            level="Foundation"
-                            title="Skill Integration"
-                            desc="Mastering the core scaffolds of digital architecture and system design logic."
-                            delay={0.1}
-                        />
-                        <ProgressionCard
-                            level="Core"
-                            title="Vertical Specialization"
-                            desc="Deep-diving into specific domains: Growth Infrastructure, SaaS Hubs, or AI Engines."
-                            delay={0.2}
-                        />
-                        <ProgressionCard
-                            level="Elite"
-                            title="Capstone Deployment"
-                            desc="Deploying real-world systems for institutional partners in our Pilot Program."
-                            delay={0.3}
-                        />
+
+                    <div className="grid md:grid-cols-3 gap-8">
+                        {/* AI Systems Engineer */}
+                        <FadeIn delay={0.1}>
+                            <div className="group relative bg-white p-10 border border-slate-200 rounded-card hover:border-primary transition-all duration-300 h-full">
+                                <div className="absolute top-4 right-4">
+                                    <span className="px-3 py-1 bg-primary/10 border border-primary/30 rounded-full text-[10px] font-black uppercase tracking-widest text-primary">
+                                        Launching Soon
+                                    </span>
+                                </div>
+                                
+                                <div className="text-5xl mb-6">🤖</div>
+                                
+                                <h3 className="text-2xl font-black mb-4 text-surface-dark group-hover:text-primary transition-colors">
+                                    AI Systems Engineer
+                                </h3>
+                                
+                                <p className="text-slate-500 leading-relaxed mb-6">
+                                    Master AI integration, automation systems, and intelligent product development. Build production-ready AI applications.
+                                </p>
+
+                                <div className="space-y-2 text-sm text-slate-400">
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>LLM Integration</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>AI Automation</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>Vector Databases</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>Production Deployment</span>
+                                    </div>
+                                </div>
+
+                                <div className="mt-8 pt-6 border-t border-slate-200">
+                                    <div className="flex items-center justify-between text-xs">
+                                        <span className="text-slate-400 uppercase tracking-widest font-black">Duration</span>
+                                        <span className="font-bold text-surface-dark">12 Weeks</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </FadeIn>
+
+                        {/* SaaS Product Builder */}
+                        <FadeIn delay={0.2}>
+                            <div className="group relative bg-white p-10 border border-slate-200 rounded-card hover:border-primary transition-all duration-300 h-full">
+                                <div className="absolute top-4 right-4">
+                                    <span className="px-3 py-1 bg-primary/10 border border-primary/30 rounded-full text-[10px] font-black uppercase tracking-widest text-primary">
+                                        Launching Soon
+                                    </span>
+                                </div>
+                                
+                                <div className="text-5xl mb-6">💻</div>
+                                
+                                <h3 className="text-2xl font-black mb-4 text-surface-dark group-hover:text-primary transition-colors">
+                                    SaaS Product Builder
+                                </h3>
+                                
+                                <p className="text-slate-500 leading-relaxed mb-6">
+                                    Learn to build scalable SaaS products from scratch. Full-stack development, architecture, and product strategy.
+                                </p>
+
+                                <div className="space-y-2 text-sm text-slate-400">
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>Full-Stack Development</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>System Architecture</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>Database Design</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>Product Strategy</span>
+                                    </div>
+                                </div>
+
+                                <div className="mt-8 pt-6 border-t border-slate-200">
+                                    <div className="flex items-center justify-between text-xs">
+                                        <span className="text-slate-400 uppercase tracking-widest font-black">Duration</span>
+                                        <span className="font-bold text-surface-dark">16 Weeks</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </FadeIn>
+
+                        {/* Growth Architect */}
+                        <FadeIn delay={0.3}>
+                            <div className="group relative bg-white p-10 border border-slate-200 rounded-card hover:border-primary transition-all duration-300 h-full">
+                                <div className="absolute top-4 right-4">
+                                    <span className="px-3 py-1 bg-primary/10 border border-primary/30 rounded-full text-[10px] font-black uppercase tracking-widest text-primary">
+                                        Launching Soon
+                                    </span>
+                                </div>
+                                
+                                <div className="text-5xl mb-6">📈</div>
+                                
+                                <h3 className="text-2xl font-black mb-4 text-surface-dark group-hover:text-primary transition-colors">
+                                    Growth Architect
+                                </h3>
+                                
+                                <p className="text-slate-500 leading-relaxed mb-6">
+                                    Master digital marketing, growth hacking, and data-driven strategies to scale businesses online.
+                                </p>
+
+                                <div className="space-y-2 text-sm text-slate-400">
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>SEO & Content Strategy</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>Paid Advertising</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>Analytics & Optimization</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-primary">•</span>
+                                        <span>Growth Frameworks</span>
+                                    </div>
+                                </div>
+
+                                <div className="mt-8 pt-6 border-t border-slate-200">
+                                    <div className="flex items-center justify-between text-xs">
+                                        <span className="text-slate-400 uppercase tracking-widest font-black">Duration</span>
+                                        <span className="font-bold text-surface-dark">10 Weeks</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </FadeIn>
                     </div>
+                </div>
+            </section>
+
+            {/* Join Waitlist CTA */}
+            <section className="py-24 px-6 bg-white border-t border-slate-200">
+                <div className="max-w-4xl mx-auto text-center">
+                    <FadeIn>
+                        <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-6">
+                            Join the <span className="text-primary italic">founding cohort.</span>
+                        </h2>
+                    </FadeIn>
+                    <FadeIn delay={0.1}>
+                        <p className="text-slate-500 text-lg mb-12 max-w-2xl mx-auto">
+                            Be among the first to experience our intensive career programs. Early members get lifetime access and exclusive mentorship.
+                        </p>
+                    </FadeIn>
+                    <FadeIn delay={0.2}>
+                        <Link
+                            href="/contact"
+                            className="inline-flex items-center gap-3 px-10 py-5 bg-primary text-white font-black uppercase text-xs tracking-widest rounded-button hover:bg-surface-dark transition-all shadow-2xl shadow-primary/20"
+                        >
+                            Join Waitlist
+                            <span>→</span>
+                        </Link>
+                    </FadeIn>
                 </div>
             </section>
         </div>
     );
-}
-
-function ProgressionCard({ level, title, desc, delay }: any) {
-    return (
-        <FadeIn delay={delay}>
-            <div className="bg-white p-10 border border-slate-200 rounded-card group hover:border-primary transition-all h-full">
-                <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 bg-slate-50 px-2 py-1 rounded inline-block mb-4">{level}</span>
-                <h3 className="text-xl font-black mb-4 group-hover:text-primary transition-colors">{title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{desc}</p>
-            </div>
-        </FadeIn>
-    )
 }
