@@ -21,7 +21,7 @@ export default function Navbar() {
                             alt="Temahux Logo" 
                             width={128} 
                             height={128}
-                            className="w-full h-full object-contain"
+                            className="w-full h-full object-cover scale-100"
                         />
                     </div>
                     <span className={`text-xl font-black tracking-tighter ${isAcademy ? "text-surface-dark" : "text-white"}`}>
