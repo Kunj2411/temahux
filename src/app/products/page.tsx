@@ -44,131 +44,151 @@ export default function ProductsPage() {
       </section>
 
       {/* Products Grid */}
-      <section className="py-24 px-6 border-t border-white/5">
+      <section className="py-32 px-6 border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           <FadeIn>
-            <h2 className="text-xs font-black uppercase tracking-[0.2em] text-slate-500 mb-16">
-              Upcoming Products
+            <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-center mb-6">
+              What are we <span className="text-primary italic">building?</span>
             </h2>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <p className="text-slate-400 text-center text-lg max-w-2xl mx-auto mb-20">
+              Next-generation institutional infrastructure powered by AI. Modular systems designed for universities, schools, and educational institutions.
+            </p>
           </FadeIn>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* University OS */}
-            <FadeIn delay={0.1}>
-              <div className="group relative p-10 bg-surface-base/30 border border-white/10 rounded-card hover:border-trust/50 transition-all duration-300">
-                <div className="absolute top-4 right-4">
-                  <span className="px-3 py-1 bg-accent/10 border border-accent/30 rounded-full text-[10px] font-black uppercase tracking-widest text-accent">
-                    Launching Soon
-                  </span>
-                </div>
-                
-                <div className="text-5xl mb-6">🏛️</div>
-                
-                <h3 className="text-2xl font-black mb-4 text-white group-hover:text-trust transition-colors">
-                  University OS
-                </h3>
-                
-                <p className="text-slate-400 leading-relaxed mb-6">
-                  Complete ERP operating system for universities and educational institutions. Manage students, faculty, courses, and operations from one unified platform.
-                </p>
+            <FadeIn delay={0.2}>
+              <div className="group relative h-full">
+                <div className="relative h-full p-10 bg-[#151022] border border-white/10 rounded-2xl hover:border-trust hover:shadow-xl transition-all duration-300 overflow-hidden">
+                  {/* Gradient Border Effect on Hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-trust/20 via-transparent to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10 flex flex-col gap-6">
+                    {/* Badge */}
+                    <div className="inline-flex px-3 py-1 bg-accent/10 border border-accent/30 rounded-full text-[10px] font-black uppercase tracking-widest text-accent self-start">
+                      Launching Soon
+                    </div>
 
-                <div className="space-y-2 text-sm text-slate-500">
-                  <div className="flex items-center gap-2">
-                    <span className="text-trust">•</span>
-                    <span>Student Management</span>
+                    {/* Icon */}
+                    <div className="p-4 bg-white/5 rounded-xl border border-white/10 inline-flex group-hover:border-trust/50 transition-all self-start">
+                      <svg className="w-8 h-8 text-trust" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </div>
+                    
+                    {/* Title */}
+                    <h3 className="text-3xl font-black tracking-tight text-white group-hover:text-trust transition-colors mt-2">
+                      University OS
+                    </h3>
+                    
+                    {/* Description */}
+                    <p className="text-slate-400 leading-relaxed min-h-[80px]">
+                      Complete ERP operating system for universities and educational institutions. Manage students, faculty, courses, and operations from one unified platform.
+                    </p>
+                    
+                    {/* CTA */}
+                    <div className="pt-4 flex items-center gap-3 group/cta mt-auto">
+                      <span className="text-xs font-black uppercase tracking-widest text-accent group-hover:text-trust transition-colors">
+                        Coming Soon
+                      </span>
+                      <div className="h-[2px] w-8 bg-accent group-hover:w-16 group-hover:bg-trust transition-all duration-300"></div>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-trust">•</span>
-                    <span>Faculty Portal</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-trust">•</span>
-                    <span>Course Administration</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-trust">•</span>
-                    <span>Financial Management</span>
-                  </div>
+
+                  {/* Hover Glow Effect */}
+                  <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-trust/30 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
               </div>
             </FadeIn>
 
             {/* Paper Checking AI */}
-            <FadeIn delay={0.2}>
-              <div className="group relative p-10 bg-surface-base/30 border border-white/10 rounded-card hover:border-primary/50 transition-all duration-300">
-                <div className="absolute top-4 right-4">
-                  <span className="px-3 py-1 bg-accent/10 border border-accent/30 rounded-full text-[10px] font-black uppercase tracking-widest text-accent">
-                    Launching Soon
-                  </span>
-                </div>
-                
-                <div className="text-5xl mb-6">🤖</div>
-                
-                <h3 className="text-2xl font-black mb-4 text-white group-hover:text-primary transition-colors">
-                  Paper Checking AI
-                </h3>
-                
-                <p className="text-slate-400 leading-relaxed mb-6">
-                  AI-powered grading system that reduces faculty workload and improves evaluation accuracy. Intelligent assessment for subjective answers.
-                </p>
+            <FadeIn delay={0.3}>
+              <div className="group relative h-full">
+                <div className="relative h-full p-10 bg-[#151022] border border-white/10 rounded-2xl hover:border-primary hover:shadow-xl transition-all duration-300 overflow-hidden">
+                  {/* Gradient Border Effect on Hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10 flex flex-col gap-6">
+                    {/* Badge */}
+                    <div className="inline-flex px-3 py-1 bg-accent/10 border border-accent/30 rounded-full text-[10px] font-black uppercase tracking-widest text-accent self-start">
+                      Launching Soon
+                    </div>
 
-                <div className="space-y-2 text-sm text-slate-500">
-                  <div className="flex items-center gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Automated Grading</span>
+                    {/* Icon */}
+                    <div className="p-4 bg-white/5 rounded-xl border border-white/10 inline-flex group-hover:border-primary/50 transition-all self-start">
+                      <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    
+                    {/* Title */}
+                    <h3 className="text-3xl font-black tracking-tight text-white group-hover:text-primary transition-colors mt-2">
+                      Paper Checking AI
+                    </h3>
+                    
+                    {/* Description */}
+                    <p className="text-slate-400 leading-relaxed min-h-[80px]">
+                      AI-powered grading system that reduces faculty workload and improves evaluation accuracy. Intelligent assessment for subjective answers.
+                    </p>
+                    
+                    {/* CTA */}
+                    <div className="pt-4 flex items-center gap-3 group/cta mt-auto">
+                      <span className="text-xs font-black uppercase tracking-widest text-accent group-hover:text-primary transition-colors">
+                        Coming Soon
+                      </span>
+                      <div className="h-[2px] w-8 bg-accent group-hover:w-16 group-hover:bg-primary transition-all duration-300"></div>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Plagiarism Detection</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Detailed Feedback</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-primary">•</span>
-                    <span>Analytics Dashboard</span>
-                  </div>
+
+                  {/* Hover Glow Effect */}
+                  <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-primary/30 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
               </div>
             </FadeIn>
 
             {/* T-Learn LMS */}
-            <FadeIn delay={0.3}>
-              <div className="group relative p-10 bg-surface-base/30 border border-white/10 rounded-card hover:border-lavender/50 transition-all duration-300">
-                <div className="absolute top-4 right-4">
-                  <span className="px-3 py-1 bg-accent/10 border border-accent/30 rounded-full text-[10px] font-black uppercase tracking-widest text-accent">
-                    Launching Soon
-                  </span>
-                </div>
-                
-                <div className="text-5xl mb-6">📚</div>
-                
-                <h3 className="text-2xl font-black mb-4 text-white group-hover:text-lavender transition-colors">
-                  T-Learn LMS
-                </h3>
-                
-                <p className="text-slate-400 leading-relaxed mb-6">
-                  Next generation learning management system with AI-driven feedback and skill tracking. Modern education delivery platform.
-                </p>
+            <FadeIn delay={0.4}>
+              <div className="group relative h-full">
+                <div className="relative h-full p-10 bg-[#151022] border border-white/10 rounded-2xl hover:border-lavender hover:shadow-xl transition-all duration-300 overflow-hidden">
+                  {/* Gradient Border Effect on Hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-lavender/20 via-transparent to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10 flex flex-col gap-6">
+                    {/* Badge */}
+                    <div className="inline-flex px-3 py-1 bg-accent/10 border border-accent/30 rounded-full text-[10px] font-black uppercase tracking-widest text-accent self-start">
+                      Launching Soon
+                    </div>
 
-                <div className="space-y-2 text-sm text-slate-500">
-                  <div className="flex items-center gap-2">
-                    <span className="text-lavender">•</span>
-                    <span>Course Builder</span>
+                    {/* Icon */}
+                    <div className="p-4 bg-white/5 rounded-xl border border-white/10 inline-flex group-hover:border-lavender/50 transition-all self-start">
+                      <svg className="w-8 h-8 text-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                      </svg>
+                    </div>
+                    
+                    {/* Title */}
+                    <h3 className="text-3xl font-black tracking-tight text-white group-hover:text-lavender transition-colors mt-2">
+                      T-Learn LMS
+                    </h3>
+                    
+                    {/* Description */}
+                    <p className="text-slate-400 leading-relaxed min-h-[80px]">
+                      Next generation learning management system with AI-driven feedback and skill tracking. Modern education delivery platform.
+                    </p>
+                    
+                    {/* CTA */}
+                    <div className="pt-4 flex items-center gap-3 group/cta mt-auto">
+                      <span className="text-xs font-black uppercase tracking-widest text-accent group-hover:text-lavender transition-colors">
+                        Coming Soon
+                      </span>
+                      <div className="h-[2px] w-8 bg-accent group-hover:w-16 group-hover:bg-lavender transition-all duration-300"></div>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-lavender">•</span>
-                    <span>Video Hosting</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-lavender">•</span>
-                    <span>AI Assessments</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-lavender">•</span>
-                    <span>Progress Tracking</span>
-                  </div>
+
+                  {/* Hover Glow Effect */}
+                  <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-lavender/30 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
               </div>
             </FadeIn>
