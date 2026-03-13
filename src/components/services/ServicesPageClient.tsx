@@ -90,7 +90,7 @@ export default function ServicesPageClient() {
                                     Business websites, landing pages and e-commerce stores.
                                 </p>
                                 <div className="text-primary font-black text-lg mb-6">
-                                    Starting â‚¹3,000+
+                                    Starting ₹3,000+
                                 </div>
                                 <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 border border-primary/20 rounded-button text-primary font-bold text-sm group-hover:bg-primary group-hover:text-white transition-all">
                                     View Details
@@ -111,7 +111,7 @@ export default function ServicesPageClient() {
                                     Strategic social media presence that drives engagement and growth.
                                 </p>
                                 <div className="text-primary font-black text-lg mb-6">
-                                    Starting â‚¹5,000/mo
+                                    Starting ₹5,000/mo
                                 </div>
                                 <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 border border-primary/20 rounded-button text-primary font-bold text-sm group-hover:bg-primary group-hover:text-white transition-all">
                                     View Details
@@ -132,7 +132,7 @@ export default function ServicesPageClient() {
                                     Distinctive brand identities from logos to complete visual systems.
                                 </p>
                                 <div className="text-primary font-black text-lg mb-6">
-                                    Starting â‚¹8,000+
+                                    Starting ₹8,000+
                                 </div>
                                 <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 border border-primary/20 rounded-button text-primary font-bold text-sm group-hover:bg-primary group-hover:text-white transition-all">
                                     View Details
@@ -153,7 +153,7 @@ export default function ServicesPageClient() {
                                     Data-driven marketing campaigns across SEO, paid ads, and email.
                                 </p>
                                 <div className="text-primary font-black text-lg mb-6">
-                                    Starting â‚¹10,000/mo
+                                    Starting ₹10,000/mo
                                 </div>
                                 <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 border border-primary/20 rounded-button text-primary font-bold text-sm group-hover:bg-primary group-hover:text-white transition-all">
                                     View Details
@@ -174,7 +174,7 @@ export default function ServicesPageClient() {
                                     Intelligent automation solutions that streamline operations.
                                 </p>
                                 <div className="text-primary font-black text-lg mb-6">
-                                    Starting â‚¹15,000+
+                                    Starting ₹15,000+
                                 </div>
                                 <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 border border-primary/20 rounded-button text-primary font-bold text-sm group-hover:bg-primary group-hover:text-white transition-all">
                                     View Details
@@ -203,7 +203,7 @@ export default function ServicesPageClient() {
                         {/* Starter Website */}
                         <div className="p-8 bg-surface-dark border border-white/5 rounded-2xl hover:border-primary/30 transition-all duration-300 group">
                             <h3 className="text-xl font-black mb-2 text-white">Starter Website</h3>
-                            <div className="text-5xl font-black text-primary mb-6">â‚¹3,000</div>
+                            <div className="text-5xl font-black text-primary mb-6">₹3,000</div>
                             <p className="text-sm text-slate-500 font-bold uppercase tracking-wider mb-6">Includes:</p>
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-start gap-3 text-slate-300">
@@ -236,7 +236,7 @@ export default function ServicesPageClient() {
                                 Popular
                             </div>
                             <h3 className="text-xl font-black mb-2 text-white">Business Website</h3>
-                            <div className="text-5xl font-black text-primary mb-6">â‚¹6,000</div>
+                            <div className="text-5xl font-black text-primary mb-6">₹6,000</div>
                             <p className="text-sm text-slate-500 font-bold uppercase tracking-wider mb-6">Includes:</p>
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-start gap-3 text-slate-300">
@@ -266,7 +266,7 @@ export default function ServicesPageClient() {
                         {/* E-Commerce Store */}
                         <div className="p-8 bg-surface-dark border border-white/5 rounded-2xl hover:border-primary/30 transition-all duration-300 group">
                             <h3 className="text-xl font-black mb-2 text-white">E-Commerce Store</h3>
-                            <div className="text-5xl font-black text-primary mb-6">â‚¹12,000+</div>
+                            <div className="text-5xl font-black text-primary mb-6">₹12,000+</div>
                             <p className="text-sm text-slate-500 font-bold uppercase tracking-wider mb-6">Includes:</p>
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-start gap-3 text-slate-300">
@@ -1073,7 +1073,7 @@ export default function ServicesPageClient() {
                                 <p className="text-slate-400 leading-relaxed">
                                     Yes, we provide hosting assistance and can help you set up reliable hosting with providers like Vercel, Netlify, or traditional hosting services. 
                                     We'll guide you through the setup process and ensure your website is properly configured for optimal performance and security. 
-                                    Hosting costs are separate and typically range from â‚¹500-2,000 per month depending on your needs.
+                                    Hosting costs are separate and typically range from ₹500-2,000 per month depending on your needs.
                                 </p>
                             </div>
                         </details>
@@ -1090,7 +1090,7 @@ export default function ServicesPageClient() {
                             </summary>
                             <div className="mt-4 pt-4 border-t border-white/5">
                                 <p className="text-slate-400 leading-relaxed">
-                                    Absolutely! Our <Link href="/services/social-media-management" className="text-primary hover:underline">social media management service</Link> starts at â‚¹5,000/month 
+                                    Absolutely! Our <Link href="/services/social-media-management" className="text-primary hover:underline">social media management service</Link> starts at ₹5,000/month 
                                     and includes 20 posts, caption writing, hashtag strategy, profile optimization, and monthly analytics. 
                                     We handle Instagram, Facebook, LinkedIn, and Twitter. Custom packages are available for businesses with specific needs or higher posting frequencies.
                                 </p>
@@ -1109,7 +1109,7 @@ export default function ServicesPageClient() {
                             </summary>
                             <div className="mt-4 pt-4 border-t border-white/5">
                                 <p className="text-slate-400 leading-relaxed">
-                                    Yes! Our <Link href="/services/ai-automation" className="text-primary hover:underline">AI automation services</Link> start at â‚¹15,000 
+                                    Yes! Our <Link href="/services/ai-automation" className="text-primary hover:underline">AI automation services</Link> start at ₹15,000 
                                     and include AI chatbots, WhatsApp automation, lead capture systems, AI content assistants, and custom integrations. 
                                     We use cutting-edge AI technologies to streamline your business operations, reduce manual work, and improve customer experience. 
                                     Each solution is customized to your specific business needs and workflows.
@@ -1325,7 +1325,7 @@ export default function ServicesPageClient() {
                                 "name": "Do you provide hosting services?",
                                 "acceptedAnswer": {
                                     "@type": "Answer",
-                                    "text": "Yes, we provide hosting assistance and can help you set up reliable hosting with providers like Vercel, Netlify, or traditional hosting services. Hosting costs typically range from â‚¹500-2,000 per month depending on your needs."
+                                    "text": "Yes, we provide hosting assistance and can help you set up reliable hosting with providers like Vercel, Netlify, or traditional hosting services. Hosting costs typically range from ₹500-2,000 per month depending on your needs."
                                 }
                             },
                             {
@@ -1333,7 +1333,7 @@ export default function ServicesPageClient() {
                                 "name": "Can you manage social media monthly?",
                                 "acceptedAnswer": {
                                     "@type": "Answer",
-                                    "text": "Absolutely! Our social media management service starts at â‚¹5,000/month and includes 20 posts, caption writing, hashtag strategy, profile optimization, and monthly analytics. We handle Instagram, Facebook, LinkedIn, and Twitter."
+                                    "text": "Absolutely! Our social media management service starts at ₹5,000/month and includes 20 posts, caption writing, hashtag strategy, profile optimization, and monthly analytics. We handle Instagram, Facebook, LinkedIn, and Twitter."
                                 }
                             },
                             {
@@ -1341,7 +1341,7 @@ export default function ServicesPageClient() {
                                 "name": "Do you offer AI automation services?",
                                 "acceptedAnswer": {
                                     "@type": "Answer",
-                                    "text": "Yes! Our AI automation services start at â‚¹15,000 and include AI chatbots, WhatsApp automation, lead capture systems, AI content assistants, and custom integrations using cutting-edge AI technologies."
+                                    "text": "Yes! Our AI automation services start at ₹15,000 and include AI chatbots, WhatsApp automation, lead capture systems, AI content assistants, and custom integrations using cutting-edge AI technologies."
                                 }
                             },
                             {
