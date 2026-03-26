@@ -1,0 +1,128 @@
+.logoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.logoSvg {
+  width: var(--logo-size, 120px);
+  height: var(--logo-size, 120px);
+}
+
+.glowRing {
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.15; transform: scale(1); }
+  50% { opacity: 0.25; transform: scale(1.05); }
+}
+
+.neuralLine {
+  stroke-dasharray: 8 4;
+  animation: neuralFlow 1.5s linear infinite;
+}
+
+.neuralLine:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.neuralLine:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes neuralFlow {
+  to { stroke-dashoffset: -24; }
+}
+
+.infinityRing {
+  animation: infinitySpin 8s linear infinite;
+  transform-origin: 90px 90px;
+}
+
+@keyframes infinitySpin {
+  to { transform: rotate(360deg); }
+}
+
+.decisionRing {
+  animation: ringPulse 3s ease-in-out infinite;
+}
+
+@keyframes ringPulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+}
+
+.arrowFlow {
+  animation: flowPulse 2s ease-in-out infinite;
+}
+
+@keyframes flowPulse {
+  0%, 100% { opacity: 0.5; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(2px); }
+}
+
+.decisionNode {
+  animation: decisionPulse 3s ease-in-out infinite;
+}
+
+.decisionNode:nth-child(1) { animation-delay: 0s; }
+.decisionNode:nth-child(2) { animation-delay: 0.4s; }
+.decisionNode:nth-child(3) { animation-delay: 0.8s; }
+.decisionNode:nth-child(4) { animation-delay: 0.2s; }
+.decisionNode:nth-child(5) { animation-delay: 0.6s; }
+.decisionNode:nth-child(6) { animation-delay: 1s; }
+
+@keyframes decisionPulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+
+.coreNode {
+  animation: nodeCorePulse 2s ease-in-out infinite;
+}
+
+@keyframes nodeCorePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.spark {
+  animation: sparkPulse 2s ease-in-out infinite;
+}
+
+.spark:nth-child(1) { animation-delay: 0s; }
+.spark:nth-child(2) { animation-delay: 0.5s; }
+.spark:nth-child(3) { animation-delay: 1s; }
+.spark:nth-child(4) { animation-delay: 1.5s; }
+
+@keyframes sparkPulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.brandName {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: calc(var(--logo-size, 120px) * 0.22);
+  letter-spacing: calc(var(--logo-size, 120px) * 0.08);
+  color: #f0ece4;
+}
+
+.tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: calc(var(--logo-size, 120px) * 0.1);
+  letter-spacing: calc(var(--logo-size, 120px) * 0.04);
+  color: #c9a84c;
+  text-transform: uppercase;
+  opacity: 0.9;
+}

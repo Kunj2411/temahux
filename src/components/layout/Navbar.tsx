@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Logo from "@/components/ui/Logo";
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -15,14 +15,8 @@ export default function Navbar() {
         <nav className={`fixed top-0 left-0 right-0 z-50 border-b backdrop-blur-md transition-all duration-300 ${isAcademy ? 'bg-white/80 border-slate-200' : 'bg-surface-dark/80 border-white/5'}`}>
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-3 group">
-                    <div className="size-20 rounded-lg overflow-hidden group-hover:rotate-12 transition-transform">
-                        <Image 
-                            src="/logo.png" 
-                            alt="Temahux Logo" 
-                            width={128} 
-                            height={128}
-                            className="w-full h-full object-cover scale-100"
-                        />
+                    <div className="group-hover:scale-110 transition-transform">
+                        <Logo size={44} showWordmark={false} />
                     </div>
                     <span className={`text-xl font-black tracking-tighter ${isAcademy ? "text-surface-dark" : "text-white"}`}>
                         TEMAHUX

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Manrope } from "next/font/google";
+import { Inter, Manrope, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import FloatingCTA from "@/components/ui/FloatingCTA";
+import PageLoader from "@/components/ui/PageLoader";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -11,6 +12,12 @@ const inter = Inter({
 const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-manrope",
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cormorant",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +35,8 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="EqVw9MIRlBS76px2XiIEjCTLeYE1lubAd3eaNhlUGvw" />
       </head>
-      <body className={`${inter.variable} ${manrope.variable} antialiased`}>
+      <body className={`${inter.variable} ${manrope.variable} ${cormorant.variable} antialiased`}>
+        <PageLoader />
         {children}
         <FloatingCTA />
       </body>
