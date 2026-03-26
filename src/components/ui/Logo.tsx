@@ -6,9 +6,34 @@ interface LogoProps {
   size?: number;
   showWordmark?: boolean;
   className?: string;
+  simple?: boolean;
 }
 
-export default function Logo({ size = 120, showWordmark = true, className = '' }: LogoProps) {
+export default function Logo({ size = 120, showWordmark = true, className = '', simple = false }: LogoProps) {
+  if (simple) {
+    return (
+      <div className={`${styles.logoWrapper} ${className}`} style={{ '--logo-size': `${size}px` } as React.CSSProperties}>
+        <svg className={styles.logoSvg} viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGoldSimple" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#e8c866"/>
+              <stop offset="50%" stopColor="#c9a84c"/>
+              <stop offset="100%" stopColor="#9a7830"/>
+            </linearGradient>
+          </defs>
+          <path d="M90 8 L142 38 L142 102 L90 132 L38 102 L38 38 Z" fill="url(#logoGoldSimple)"/>
+          <path d="M90 28 L124 48 L124 92 L90 112 L56 92 L56 48 Z" fill="#08080f" opacity="0.3"/>
+          <text x="90" y="100" textAnchor="middle" fill="#08080f" fontFamily="Outfit, sans-serif" fontSize="48" fontWeight="700">T</text>
+        </svg>
+        {showWordmark && (
+          <div className={styles.wordmark}>
+            <span className={styles.brandName}>TEMAHUX</span>
+          </div>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div className={`${styles.logoWrapper} ${className}`} style={{ '--logo-size': `${size}px` } as React.CSSProperties}>
       <svg className={styles.logoSvg} viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">

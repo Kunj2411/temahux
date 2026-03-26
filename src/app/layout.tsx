@@ -23,6 +23,9 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: "Temahux | Hybrid Digital Ecosystem",
   description: "Venture-backed SaaS + Education Infrastructure",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
