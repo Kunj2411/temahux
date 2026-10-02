@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/api/', '/_next/'],
         },
-        sitemap: 'https://temahux.com/sitemap.xml',
+        sitemap: 'https://services.temahux.com/sitemap.xml',
     }
 }

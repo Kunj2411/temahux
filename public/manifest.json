@@ -1,11 +1,11 @@
 {
-  "name": "Temahux | Hybrid Digital Ecosystem",
+  "name": "Temahux | Digital Products, Software & AI",
   "short_name": "Temahux",
-  "description": "Venture-backed SaaS + Education Infrastructure",
+  "description": "Digital products, software, AI solutions and automation systems.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0b",
-  "theme_color": "#4f46e5",
+  "theme_color": "#2869ed",
   "icons": [
     {
       "src": "/favicon.ico",

@@ -1,22 +1,32 @@
 import { MetadataRoute } from 'next'
+import { extendedServices, insights } from '@/lib/extended-content'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://temahux.com'
+    const baseUrl = 'https://services.temahux.com'
 
     const routes = [
         '',
-        '/vision',
-        '/architecture',
+        '/vision', '/about', '/industries', '/portfolio', '/insights',
+        '/privacy-policy', '/terms-and-conditions', '/vision', '/architecture',
         '/services',
-        '/services/framework',
+        '/services/build',
+        '/services/grow',
+        '/services/automate',
+        '/services/operate',
+        '/services/pricing',
+        '/services/process',
+        '/services/web-development',
+        '/services/branding-design',
+        '/services/digital-marketing',
+        '/services/social-media-management',
+        '/services/ai-automation',
+        ...extendedServices.map(({ slug }) => `/services/${slug}`),
+        ...insights.map(({ slug }) => `/insights/${slug}`),
+        '/services/contact-consultation',
         '/products',
         '/products/university-os',
         '/products/paper-checking-ai',
         '/products/lms',
-        '/academy',
-        '/academy/track-structure',
-        '/academy/dashboard',
-        '/about',
         '/contact',
     ].map((route) => ({
         url: `${baseUrl}${route}`,

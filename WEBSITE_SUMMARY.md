@@ -2,7 +2,7 @@
 
 **Version:** 0.1.0  
 **Last Updated:** March 6, 2026  
-**Domain:** https://temahux.com
+**Domain:** https://services.temahux.com
 
 ---
 
@@ -784,9 +784,9 @@ npm run lint
 ## APPENDIX: Quick Reference
 
 ### Key URLs
-- Homepage: https://temahux.com
-- Sitemap: https://temahux.com/sitemap.xml
-- Robots: https://temahux.com/robots.txt
+- Homepage: https://services.temahux.com
+- Sitemap: https://services.temahux.com/sitemap.xml
+- Robots: https://services.temahux.com/robots.txt
 
 ### Contact Information
 - Email: strategic@temahux.com

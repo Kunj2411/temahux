@@ -1,74 +1,105 @@
-import Navbar from "@/components/layout/Navbar";
-import FadeIn from "@/components/ui/FadeIn";
+import type { Metadata } from "next";
 import Link from "next/link";
+import Navbar from "@/components/layout/Navbar";
+import SectionHeader from "@/components/services/v2/SectionHeader";
+import ServiceFooter from "@/components/services/v2/ServiceFooter";
+import { conversionLabel, siteUrl } from "@/lib/services";
+
+export const metadata: Metadata = {
+  title: "Branding & Design — Logo, identity and visual systems | Temahux",
+  description:
+    "Distinctive brand identities from logos to complete visual systems. Published entry point ₹8,000+.",
+  alternates: { canonical: `${siteUrl}/services/branding-design` },
+};
+
+const capabilities = [
+  { name: "Logo Design", detail: "Unique brand marks and wordmarks" },
+  {
+    name: "Brand Identity",
+    detail: "Complete visual system and guidelines",
+  },
+  {
+    name: "Marketing Collateral",
+    detail: "Business cards, brochures, and more",
+  },
+];
 
 export default function BrandingDesignPage() {
   return (
-    <div className="min-h-screen bg-surface-dark text-white">
+    <>
       <Navbar />
-      
-      <section className="pt-40 pb-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <FadeIn>
-            <span className="text-xs font-black uppercase tracking-[0.3em] text-accent mb-6 block">
-              Service Offering
-            </span>
-          </FadeIn>
-          <FadeIn delay={0.1}>
-            <h1 className="text-5xl md:text-7xl font-black leading-tight mb-8 tracking-tighter">
-              Branding & <span className="text-primary italic">Design</span>
-            </h1>
-          </FadeIn>
-          <FadeIn delay={0.2}>
-            <p className="text-xl text-slate-400 leading-relaxed mb-12 max-w-3xl">
-              Distinctive brand identities that resonate with your audience. 
-              From logos to complete visual systems, we craft memorable brand experiences.
+
+      <main className="bg-bg text-text">
+        <section className="svc-page-top border-b border-line pb-16">
+          <div className="svc-container">
+            <SectionHeader
+              level={1}
+              eyebrow="Service Offering"
+              heading="Branding & Design"
+              intro="Distinctive brand identities that resonate with your audience. From logos to complete visual systems, we craft memorable brand experiences."
+            />
+
+            <p className="svc-price mt-8 text-signal">Starting from ₹8,000</p>
+            <p className="mt-3 max-w-xl text-[15px] leading-[1.65] text-text-muted">
+              Logo packages start at ₹8k, full brand identity from ₹25k.
             </p>
-          </FadeIn>
 
-          <FadeIn delay={0.3}>
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <div className="p-6 bg-surface-base/30 border border-white/5 rounded-card">
-                <h3 className="text-lg font-black mb-2">Logo Design</h3>
-                <p className="text-sm text-slate-400">Unique brand marks and wordmarks</p>
-              </div>
-              <div className="p-6 bg-surface-base/30 border border-white/5 rounded-card">
-                <h3 className="text-lg font-black mb-2">Brand Identity</h3>
-                <p className="text-sm text-slate-400">Complete visual system and guidelines</p>
-              </div>
-              <div className="p-6 bg-surface-base/30 border border-white/5 rounded-card">
-                <h3 className="text-lg font-black mb-2">Marketing Collateral</h3>
-                <p className="text-sm text-slate-400">Business cards, brochures, and more</p>
-              </div>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={0.4}>
-            <div className="bg-surface-base rounded-card p-12 mb-12 border border-white/5">
-              <h2 className="text-xs font-black uppercase tracking-widest text-slate-500 mb-4">Pricing</h2>
-              <p className="text-4xl font-black text-accent mb-4">Starting from ₹8,000</p>
-              <p className="text-sm text-slate-400">Logo packages start at ₹8k, full brand identity from ₹25k</p>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={0.5}>
-            <div className="flex gap-4">
-              <Link 
-                href="/contact" 
-                className="px-10 py-5 bg-primary text-white font-black uppercase text-xs tracking-widest rounded-button hover:bg-accent hover:text-surface-dark transition-all"
+            <div className="mt-10 flex flex-wrap gap-3">
+              <Link
+                href="/services/contact-consultation"
+                className="rounded-panel bg-brand px-7 py-4 text-[15px] font-medium text-white transition-colors duration-200 hover:bg-white hover:text-bg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
               >
-                Get Started
+                {conversionLabel}
               </Link>
-              <Link 
-                href="/services" 
-                className="px-10 py-5 bg-white/5 text-white font-black uppercase text-xs tracking-widest rounded-button hover:bg-white hover:text-surface-dark transition-all border border-white/10"
+              <Link
+                href="/services/pricing"
+                className="rounded-panel border border-line px-7 py-4 text-[15px] font-medium text-text transition-colors duration-200 hover:border-brand hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
               >
-                View All Services
+                See pricing
               </Link>
             </div>
-          </FadeIn>
-        </div>
-      </section>
-    </div>
+          </div>
+        </section>
+
+        <section className="svc-section">
+          <div className="svc-container">
+            <h2 className="svc-mono text-text-muted">What this covers</h2>
+
+            <div className="mt-6 grid gap-px border-y border-line bg-line md:grid-cols-3">
+              {capabilities.map((item) => (
+                <div key={item.name} className="bg-bg py-7 md:px-7">
+                  <h3 className="font-display-services text-[19px] tracking-[-0.01em] text-text">
+                    {item.name}
+                  </h3>
+                  <p className="mt-3 text-[15px] leading-[1.65] text-text-muted">
+                    {item.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <nav
+              aria-label="Related services pages"
+              className="mt-12 flex flex-wrap gap-x-8 gap-y-3"
+            >
+              <Link
+                href="/services/grow"
+                className="svc-mono text-text-muted transition-colors duration-200 hover:text-brand focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
+              >
+                Grow practice →
+              </Link>
+              <Link
+                href="/services"
+                className="svc-mono text-text-muted transition-colors duration-200 hover:text-brand focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
+              >
+                All services →
+              </Link>
+            </nav>
+          </div>
+        </section>
+      </main>
+
+      <ServiceFooter />
+    </>
   );
 }

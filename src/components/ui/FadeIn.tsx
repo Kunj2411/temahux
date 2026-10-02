@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 interface FadeInProps {
     children: React.ReactNode;
@@ -17,6 +17,14 @@ export default function FadeIn({
     className = "",
     scale = 1
 }: FadeInProps) {
+    const shouldReduceMotion = useReducedMotion();
+
+    // Users who have asked for reduced motion get the content immediately,
+    // with no reveal transition at all.
+    if (shouldReduceMotion) {
+        return <div className={className}>{children}</div>;
+    }
+
     const directions = {
         up: { y: 20 },
         down: { y: -20 },

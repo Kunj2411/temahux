@@ -1,49 +1,8 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
-import FadeIn from "@/components/ui/FadeIn";
 import ContactForm from "@/components/ui/ContactForm";
-
-export default function ContactPage() {
-    return (
-        <div className="min-h-screen bg-surface-dark text-white font-body selection:bg-primary">
-            <Navbar />
-
-            <section className="pt-40 pb-24 px-6">
-                <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24">
-                    {/* Left: Engagement Intent */}
-                    <FadeIn direction="right">
-                        <div>
-                            <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-8 leading-[0.95]">
-                                Initiate <br />
-                                Pilot <br />
-                                <span className="text-accent italic">Briefing.</span>
-                            </h1>
-                            <p className="text-lg text-slate-400 leading-relaxed mb-12 max-w-lg">
-                                We are currently accepting a limited number of pilot institutions and strategic partners for Q3 2026. Request a briefing to evaluate system fit.
-                            </p>
-
-                            <div className="space-y-8">
-                                <ContactDetail label="Global HQ" content="Gandhinagar, India" delay={0.1} />
-                                <ContactDetail label="Direct Dial" content="+91 9104578807" delay={0.2} />
-                                <ContactDetail label="Email" content="kunj.joshi@temahux.com" delay={0.3} />
-                            </div>
-                        </div>
-                    </FadeIn>
-
-                    {/* Right: Lead Engineering Form */}
-                    <ContactForm />
-                </div>
-            </section>
-        </div>
-    );
-}
-
-function ContactDetail({ label, content, delay }: any) {
-    return (
-        <FadeIn delay={delay}>
-            <div>
-                <span className="block text-[10px] font-black uppercase tracking-[0.2em] text-primary mb-1">{label}</span>
-                <span className="text-xl font-bold text-white">{content}</span>
-            </div>
-        </FadeIn>
-    )
-}
+import { contact, siteName } from "@/lib/site";
+export const metadata: Metadata = { title: "Contact Temahux", description: "Tell Temahux what you are building or improving. Start a project enquiry.", alternates: { canonical: "https://services.temahux.com/contact" }, openGraph: { title: "Contact Temahux", description: "Start a project enquiry with Temahux.", url: "https://services.temahux.com/contact" } };
+export default function ContactPage(){return <><Navbar/><main className="min-h-screen bg-[#071326] text-white"><section className="mx-auto grid w-[min(1180px,calc(100%_-_40px))] gap-12 pb-24 pt-28 md:gap-16 md:pb-32 md:pt-40 lg:grid-cols-[.8fr_1fr]"><div className="pt-4"><p className="flex items-center gap-3 font-mono text-[10px] tracking-[.16em] text-blue-200"><span className="h-1.5 w-1.5 rounded-full bg-blue-400"/>START A CONVERSATION</p><h1 className="mt-6 text-[clamp(3.3rem,7vw,6.4rem)] font-semibold leading-[.95] tracking-[-.065em]">Let’s build<br/><span className="text-[#80adff]">something useful.</span></h1><p className="mt-7 max-w-lg text-lg leading-relaxed text-white/65">Tell us what you’re building, improving or trying to untangle. We’ll start with the problem and work out the next step together.</p><div className="mt-12 space-y-6">{[[Mail,"Email",contact.email,contact.emailHref],[Phone,"Phone",contact.phone,contact.phoneHref],[MapPin,"Location",contact.hq,""]].map(([Icon,label,value,href])=><div className="flex items-start gap-4" key={label as string}><span className="mt-0.5 rounded-lg border border-white/10 p-2.5 text-blue-300"><Icon size={17}/></span><div><p className="font-mono text-[9px] tracking-[.14em] text-white/45">{label as string}</p>{href?<a className="mt-1 inline-flex items-center gap-2 text-sm text-white/85 hover:text-white" href={href as string}>{value as string}<ArrowUpRight size={13}/></a>:<p className="mt-1 text-sm text-white/85">{value as string}</p>}</div></div>)}</div><Link href="/services" className="mt-10 inline-flex items-center gap-2 border-b border-white/25 pb-2 text-sm text-white/70 hover:text-white">Explore services <ArrowUpRight size={14}/></Link></div><div><ContactForm/></div></section></main></>}
