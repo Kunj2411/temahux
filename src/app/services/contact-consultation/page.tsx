@@ -1,8 +1,0 @@
-import type { Metadata } from "next";
-import Navbar from "@/components/layout/Navbar";
-import ServiceFooter from "@/components/services/v2/ServiceFooter";
-import ContactForm from "@/components/ui/ContactForm";
-import { contact } from "@/lib/site";
-import { siteUrl } from "@/lib/services";
-export const metadata: Metadata = { title: "Start a Project | Temahux", description: "Tell Temahux what you are trying to build or improve.", alternates: { canonical: `${siteUrl}/services/contact-consultation` } };
-export default function ContactConsultationPage(){return <><Navbar/><main className="bg-bg text-text"><section className="svc-container grid gap-12 pb-24 pt-32 md:pb-32 md:pt-44 lg:grid-cols-[.8fr_1fr] lg:gap-20"><div><p className="svc-mono text-signal">START A PROJECT</p><h1 className="mt-6 max-w-2xl font-display-services text-[clamp(3rem,7vw,6rem)] leading-[.98] tracking-[-.06em]">Tell us what needs to <span className="text-brand">work.</span></h1><p className="mt-6 max-w-lg text-lg leading-relaxed text-text-muted">Share the problem, what you are trying to change and what a useful outcome would look like. We’ll work out the right next step together.</p><div className="mt-10 space-y-5 text-sm"><p><span className="svc-mono-sm block text-text-muted">EMAIL</span><a className="mt-2 inline-block hover:text-white" href={contact.emailHref}>{contact.email}</a></p><p><span className="svc-mono-sm block text-text-muted">PHONE</span><a className="mt-2 inline-block hover:text-white" href={contact.phoneHref}>{contact.phone}</a></p><p><span className="svc-mono-sm block text-text-muted">LOCATION</span><span className="mt-2 inline-block">{contact.hq}</span></p></div></div><ContactForm variant="consultation"/></section></main><ServiceFooter/></>}

@@ -1,33 +1,40 @@
-# TEMAHUX Platform
+# TEMAHUX
 
-Next.js App Router site for TEMAHUX digital services, products and Academy. The downloaded Veltro website is a static HTML reference, so the site keeps its editorial hierarchy and interaction quality while using TEMAHUX content, visual assets and a blue/navy design system.
+The repository contains three independent Next.js applications:
 
-## Run locally
+| Application | Directory | Production domain |
+| --- | --- | --- |
+| Main | `apps/main` | `www.temahux.com` and `temahux.com` |
+| Services | `apps/services` | `services.temahux.com` |
+| Academy | `apps/academy` | `academy.temahux.com` |
 
-```bash
-npm install
-npm run dev
+Each application retains its own `package.json`, lockfile, Next.js configuration,
+routes, components, assets, and environment configuration. Install and run an
+application independently from the repository root:
+
+```sh
+npm ci --prefix apps/main
+npm run dev:main
+
+npm ci --prefix apps/services
+npm run dev:services
+
+npm ci --prefix apps/academy
+npm run dev:academy
 ```
 
-The development script uses Next.js Webpack in this nested workspace so Tailwind resolves from this app. For a production build and lint pass:
+Development servers use ports 3000, 3001, and 3002, respectively. To create
+production builds, run `npm run build:main`, `npm run build:services`, or
+`npm run build:academy`. `npm run build:all` runs all three sequentially.
 
-```bash
-npm run lint
-npm run build
-npm start
-```
+## Vercel
 
-## Contact forms
+Create a separate Vercel project for each application, connected to
+`Kunj2411/temahux`. Set each project's Root Directory to its application
+directory (`apps/main`, `apps/services`, or `apps/academy`) so its build is
+independent. Assign only the corresponding production domains listed above.
 
-Set `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` in `.env.local` and in the Vercel project environment before building for production. The key is intended for client-side use by Web3Forms. `.env.example` documents the variable. Contact, project consultation, and the Services page consultation forms report when delivery is not configured and never claim an unsent enquiry succeeded.
-
-## Structure
-
-- `src/app/` — route pages, metadata, sitemap and robots rules
-- `src/components/` — shared navigation, footer, product and service components
-- `src/lib/` — centralized site, service, product, industry and insight content
-- `public/temahux-wordmark.png` — supplied TEMAHUX wordmark used in the light navigation
-
-Product exploration pages describe direction rather than availability. The portfolio links to TEMAHUX product pages while there are no verified client case studies cleared for publication. Add project screenshots and evidence through the centralized portfolio content when they are available.
-
-The privacy and terms pages contain general site information. Before launch, confirm them against the actual contact-form provider, retention practices, analytics configuration and applicable legal requirements.
+Services and Academy environment-variable names and setup instructions are
+documented in their `.env.example` files and READMEs. Main currently requires
+no environment variables. Secret environment files are not part of this
+repository.

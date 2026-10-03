@@ -1,0 +1,8 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import Navbar from "@/components/layout/Navbar";
+import { insights } from "@/lib/extended-content";
+import { siteUrl } from "@/lib/services";
+export const metadata: Metadata = { title: "Insights | Temahux", description: "Notes on technology, product development and practical automation from Temahux.", alternates: { canonical: `${siteUrl}/insights` } };
+export default function InsightsPage(){return <><Navbar/><main className="bg-tx-base text-tx-ink"><section className="tx-container pb-24 pt-32 md:pt-44"><p className="tx-eyebrow text-tx-brand">NOTES FROM TEMAHUX</p><h1 className="mt-5 text-[clamp(3.25rem,8vw,7rem)] font-semibold leading-[.98] tracking-[-.06em]">Ideas for building<br/><span className="text-tx-brand">useful technology.</span></h1><p className="mt-7 max-w-xl text-lg leading-relaxed text-tx-ink-soft">Practical perspectives on product decisions, digital systems and the work around them.</p><div className="mt-14 divide-y divide-tx-line border-y border-tx-line">{insights.map((article)=><Link href={`/insights/${article.slug}`} key={article.slug} className="group grid gap-4 py-8 md:grid-cols-[150px_1fr_auto] md:items-center"><div><span className="tx-eyebrow text-tx-brand">{article.category}</span><p className="mt-2 text-xs text-tx-ink-soft">{article.readingTime}</p></div><div><h2 className="text-2xl font-semibold tracking-tight group-hover:text-tx-brand">{article.title}</h2><p className="mt-2 max-w-2xl text-sm leading-relaxed text-tx-ink-soft">{article.description}</p></div><ArrowUpRight className="text-tx-brand"/></Link>)}</div></section></main></>}
