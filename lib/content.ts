@@ -51,13 +51,13 @@ export const academySteps: readonly AcademyStep[] = [
 export const destinations = {
   services: "/services",
   academy: "/academy",
-  products: "https://products.temahux.com/",
+  products: "/services/products/",
 } as const;
 
 export const brand = {
   name: "TEMAHUX",
   line: "where everything is possible.",
-  email: "hello@temahux.com",
+  email: "kunj.joshi@temahux.com",
   site: "https://temahux.com",
   location: "Ahmedabad, India",
 } as const;

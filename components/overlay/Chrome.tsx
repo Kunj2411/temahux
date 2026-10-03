@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, type MouseEvent } from "react";
+import Link from "next/link";
 import type { ChapterId } from "@/lib/scene-state";
 import { hasScrolled, getLenis, state } from "@/lib/scene-state";
 import { destinations } from "@/lib/content";
@@ -54,11 +55,11 @@ export function Chrome() {
         <img src="/temahux-symbol.png" alt="" /><span>TEMAHUX</span>
       </a>
       <nav className="chrome__nav" aria-label="Main navigation">
-        <a href={destinations.services}>Services</a>
-        <a href={destinations.academy}>Academy</a>
-        <a ref={productsLink} href="#products" onClick={(event) => navigate(event, "products")}>Products</a>
+        <Link href={destinations.services}>Services</Link>
+        <Link href={destinations.academy}>Academy</Link>
+        <Link ref={productsLink} href={destinations.products}>Products</Link>
       </nav>
-      <a className="chrome__action" href="mailto:hello@temahux.com">Let’s talk <span aria-hidden="true">↗</span></a>
+      <a className="chrome__action" href="mailto:kunj.joshi@temahux.com">Let’s talk <span aria-hidden="true">↗</span></a>
       <div className="chrome__hint" ref={hintRef} aria-hidden="false"><span>Scroll to begin</span><i aria-hidden="true" /></div>
     </header>
   );

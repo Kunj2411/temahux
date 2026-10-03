@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 import { state } from "@/lib/scene-state";
 import { brand, destinations, services, academyTracks } from "@/lib/content";
 import { PRODUCTS_URL, products } from "@/products";
@@ -67,7 +68,7 @@ export function Chapters() {
       <section id="origin" ref={bind("origin")} className="chapter chapter--hero">
         <div className="hero-composition"><p className="hero-overline">Digital services · practical learning · useful products</p><h1 className="hero-title">{brand.name}</h1><p className="hero-tagline">{brand.line}</p></div>
         <p className="hero-note">Digital services, practical learning<br />and products built for real use.</p>
-        <a className="hero-round-link" href="mailto:hello@temahux.com" aria-label="Talk to Temahux">↗</a>
+        <a className="hero-round-link" href="mailto:kunj.joshi@temahux.com" aria-label="Talk to Temahux">↗</a>
       </section>
 
       <section ref={bind("motion")} className="chapter chapter--center"><div><p className="chapter__eyebrow">A connected digital practice</p><h2 className="chapter__title">A little further.<br />A little more possible.</h2></div></section>
@@ -82,7 +83,7 @@ export function Chapters() {
 
       <section id="academy" ref={bind("academy")} className="chapter chapter--editorial"><div className="chapter__inner"><div className="chapter__heading-row"><p className="chapter__eyebrow">TEMAHUX Academy</p><p ref={bindPrice("academy")} className="price-note">Academy · starting at just ₹49</p></div><h2 className="chapter__title chapter__title--mid">Learn.<br />Build. Create.</h2><p className="chapter__intro">Project-based learning in programming, AI, software and emerging technology—built around practice.</p><p className="academy-topics">{academyTracks.map((track) => track.name).join("  ·  ")}</p><a className="chapter__cta" href={destinations.academy}>Explore Academy <span>↗</span></a></div></section>
 
-      <section id="products" ref={bind("products")} className="chapter chapter--editorial"><div className="chapter__inner"><div className="chapter__heading-row"><p className="chapter__eyebrow">TEMAHUX Products</p><p className="chapter__side-note">Tools made to solve<br />specific problems.</p></div><h2 className="chapter__title chapter__title--mid">Made to be used.</h2><ul className="chapter__list chapter__list--products">{products.map((product) => <li key={product.id}><span className="chapter__list-index">{product.index}</span><span className="chapter__list-name">{product.href ? <a className="product-link" href={product.href} target="_blank" rel="noreferrer" aria-label={`Learn about ${product.name} on TEMAHUX Products`}>{product.name} ↗</a> : product.name}</span><span className="product-info"><span>{product.description}</span><small>{product.category} · {product.status}</small></span></li>)}</ul><a className="chapter__cta" href={PRODUCTS_URL}>Discover our products <span>↗</span></a></div></section>
+      <section id="products" ref={bind("products")} className="chapter chapter--editorial"><div className="chapter__inner"><div className="chapter__heading-row"><p className="chapter__eyebrow">TEMAHUX Products</p><p className="chapter__side-note">Tools made to solve<br />specific problems.</p></div><h2 className="chapter__title chapter__title--mid">Made to be used.</h2><ul className="chapter__list chapter__list--products">{products.map((product) => <li key={product.id}><span className="chapter__list-index">{product.index}</span><span className="chapter__list-name">{product.href ? <Link className="product-link" href={product.href} aria-label={`Learn about ${product.name} on TEMAHUX Products`}>{product.name} ↗</Link> : product.name}</span><span className="product-info"><span>{product.description}</span><small>{product.category} · {product.status}</small></span></li>)}</ul><Link className="chapter__cta" href={PRODUCTS_URL}>Discover our products <span>↗</span></Link></div></section>
 
       <section ref={bind("finale")} className="chapter chapter--finale"><div className="finale__content"><p className="chapter__eyebrow">TEMAHUX <span>· Ahmedabad, India</span></p><h2 className="finale__title">Where everything<br />is possible.</h2><p className="finale__tagline">A good idea can start here.</p><a className="finale__cta" href={`mailto:${brand.email}`}>Start a conversation <span>↗</span></a></div></section>
       <section ref={bind("footer")} className="chapter chapter--footer"><footer className="finale__footer"><a href="#origin" onClick={(event) => { event.preventDefault(); const lenis = getLenis(); lenis?.scrollTo(0, { duration: 1.1 }); if (window.location.hash !== "#origin") window.history.pushState(null, "", "#origin"); }}>TEMAHUX</a><a href={destinations.services}>Services</a><a href={destinations.academy}>Academy</a><span>© {new Date().getFullYear()} Temahux · Ahmedabad, India</span><a href={`mailto:${brand.email}`}>{brand.email}</a></footer></section>

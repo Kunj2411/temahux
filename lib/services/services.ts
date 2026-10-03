@@ -114,7 +114,7 @@ export const practices: Practice[] = [
     // [CONTENT NEEDED] No verified Build case study exists in this codebase.
     workNote: "Relevant work — awaiting verified case studies.",
     ctaLabel: "View all Build capabilities",
-    ctaHref: "/services/build",
+    ctaHref: "/services/services/build",
   },
   {
     slug: "grow",
@@ -164,7 +164,7 @@ export const practices: Practice[] = [
     // [CONTENT NEEDED] No verified Grow case study exists in this codebase.
     workNote: "Relevant work — awaiting verified case studies.",
     ctaLabel: "View all Grow capabilities",
-    ctaHref: "/services/grow",
+    ctaHref: "/services/services/grow",
   },
   {
     slug: "automate",
@@ -214,7 +214,7 @@ export const practices: Practice[] = [
     // [CONTENT NEEDED] No verified Automate case study exists in this codebase.
     workNote: "Relevant work — awaiting verified case studies.",
     ctaLabel: "View all Automate capabilities",
-    ctaHref: "/services/automate",
+    ctaHref: "/services/services/automate",
   },
   {
     slug: "operate",
@@ -279,7 +279,7 @@ export const practices: Practice[] = [
     // [CONTENT NEEDED] No verified Operate case study exists in this codebase.
     workNote: "Relevant work — awaiting verified case studies.",
     ctaLabel: "Talk to Temahux",
-    ctaHref: "#talk",
+    ctaHref: "/services/services/operate",
   },
 ];
 

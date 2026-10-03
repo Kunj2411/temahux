@@ -6,6 +6,8 @@
 @keyframes nav-panel-in { from { opacity:0; transform:translateY(-6px); } to { opacity:1; transform:translateY(0); } }
 .services-site .tx-mobile-menu-in { animation:nav-panel-in .18s ease-out both; }
 .services-site .tx-desktop-menu-in { animation:nav-panel-in .18s ease-out both; }
+.services-site #tx-mega-panel > div { background-color: var(--color-tx-white); }
+.services-site #tx-mobile-panel { background-color: var(--color-tx-white); border-color: var(--color-tx-line); }
 .services-site .home-hero { min-height:700px; min-height:min(810px,calc(100svh - 84px)); position:relative; display:flex; align-items:center; background:radial-gradient(ellipse at 76% 45%,#edf3ff 0,transparent 39%),#fbfcfe; overflow:hidden; }
 .services-site .home-hero-grid { position:absolute; inset:0; opacity:.29; background-image:linear-gradient(#dbe4f1 1px,transparent 1px),linear-gradient(90deg,#dbe4f1 1px,transparent 1px); background-size:72px 72px; mask-image:linear-gradient(90deg,transparent 12%,#000 72%); }
 .services-site .home-hero-inner, .services-site .home-section-meta, .services-site .home-intro-layout, .services-site .home-practices, .services-site .home-dark-inner, .services-site .home-offerings-heading, .services-site .home-offer-grid, .services-site .home-capability-foot, .services-site .home-ecosystem, .services-site .home-principles-layout, .services-site .home-cta-inner { width:min(1240px,calc(100% - 64px)); margin-inline:auto; }

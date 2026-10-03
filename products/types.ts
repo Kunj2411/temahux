@@ -21,10 +21,10 @@ export interface Product {
   status: ProductStatus;
   /** One sentence. Never more. */
   description: string;
-  /** Optional external destination. */
+  /** Optional internal destination. */
   href?: string;
   /** Procedural 3D representation. */
   form: ProductForm;
 }
 
-export const PRODUCTS_URL = "https://products.temahux.com/";
+export const PRODUCTS_URL = "/services/products/";
