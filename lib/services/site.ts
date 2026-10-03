@@ -90,7 +90,6 @@ export const productsColumn: NavColumn = {
 /** Top-level links that are not part of the mega panel. */
 export const topLevelNav: NavLink[] = [
   { label: "Contact", href: "/services/contact" },
-  { label: "Temahux Home", href: mainSiteUrl },
   { label: "Academy", href: academySiteUrl },
 ];
 
