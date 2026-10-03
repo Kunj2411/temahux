@@ -1,0 +1,869 @@
+/* TEMAHUX home experience: electric blue, deep ink and restrained motion. */
+.services-site .home-shell { --home-ink:#101827; --home-muted:#687489; --home-blue:#3978f6; --home-navy:#071326; --home-line:#e5eaf1; color:var(--home-ink); background:#fbfcfe; overflow:hidden; }
+@keyframes home-reveal { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }
+.services-site .home-hero-copy { animation:home-reveal .55s cubic-bezier(.2,.7,.2,1) both; }
+.services-site .home-system { animation:home-reveal .65s .12s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes nav-panel-in { from { opacity:0; transform:translateY(-6px); } to { opacity:1; transform:translateY(0); } }
+.services-site .tx-mobile-menu-in { animation:nav-panel-in .18s ease-out both; }
+.services-site .tx-desktop-menu-in { animation:nav-panel-in .18s ease-out both; }
+.services-site .home-hero { min-height:700px; min-height:min(810px,calc(100svh - 84px)); position:relative; display:flex; align-items:center; background:radial-gradient(ellipse at 76% 45%,#edf3ff 0,transparent 39%),#fbfcfe; overflow:hidden; }
+.services-site .home-hero-grid { position:absolute; inset:0; opacity:.29; background-image:linear-gradient(#dbe4f1 1px,transparent 1px),linear-gradient(90deg,#dbe4f1 1px,transparent 1px); background-size:72px 72px; mask-image:linear-gradient(90deg,transparent 12%,#000 72%); }
+.services-site .home-hero-inner, .services-site .home-section-meta, .services-site .home-intro-layout, .services-site .home-practices, .services-site .home-dark-inner, .services-site .home-offerings-heading, .services-site .home-offer-grid, .services-site .home-capability-foot, .services-site .home-ecosystem, .services-site .home-principles-layout, .services-site .home-cta-inner { width:min(1240px,calc(100% - 64px)); margin-inline:auto; }
+.services-site .home-hero-inner { position:relative; display:grid; grid-template-columns:1fr .92fr; align-items:center; gap:64px; padding:88px 0 100px; }
+.services-site .home-hero-copy { position:relative; z-index:2; }
+.services-site .home-kicker, .services-site .home-section-meta, .services-site .home-proofline, .services-site .home-system-head, .services-site .home-system-foot, .services-site .home-index, .services-site .home-offer-num, .services-site .home-eco-card>span, .services-site .home-principle>span { font:500 10px/1.5 var(--font-mono); letter-spacing:.13em; }
+.services-site .home-kicker { display:flex; align-items:center; gap:10px; color:#627087; }
+.services-site .home-kicker>span { width:7px; height:7px; border-radius:50%; background:var(--home-blue); box-shadow:0 0 0 4px #3978f61a; }
+.services-site .home-hero h1, .services-site .home-intro h2, .services-site .home-dark-inner h2, .services-site .home-offerings h2, .services-site .home-ecosystem h2, .services-site .home-principles h2, .services-site .home-cta h2 { font-family:var(--font-primary); font-weight:600; letter-spacing:-.065em; }
+.services-site .home-hero h1 { margin:28px 0 20px; font-size:clamp(64px,7.3vw,104px); line-height:.94; }
+.services-site .home-hero h1 em, .services-site .home-intro h2 span, .services-site .home-offerings h2 span { color:var(--home-blue); font-style:normal; }
+.services-site .home-lede { max-width:480px; color:#657187; font-size:18px; line-height:1.65; }
+.services-site .home-actions { display:flex; align-items:center; gap:26px; margin-top:34px; }
+.services-site .home-price-note { display:inline-flex; align-items:center; gap:14px; margin-top:20px; padding:9px 10px 9px 14px; border:1px solid #d8e4fb; border-radius:9px; color:#53627a; background:#f5f8ff; font-size:13px; }
+.services-site .home-price-note>span { display:flex; flex-direction:column; gap:3px; font-weight:600; }
+.services-site .home-price-note small { color:#7a879a; font-size:10px; font-weight:450; }
+.services-site .home-price-note>strong { display:grid; min-width:46px; height:36px; place-items:center; border-radius:6px; color:#fff; background:var(--home-blue); font-size:16px; font-weight:650; }
+.services-site .home-button { min-height:48px; padding:0 20px; display:inline-flex; align-items:center; justify-content:center; gap:14px; border-radius:8px; font-size:14px; font-weight:550; transition:transform .2s,background .2s,color .2s; }
+.services-site .home-button:hover { transform:translateY(-2px); }
+.services-site .home-button-blue { background:#2869ed; color:#fff; box-shadow:0 9px 22px #2869ed2c; }
+.services-site .home-button-blue:hover { background:#1756d7; }
+.services-site .home-text-link, .services-site .home-underlined, .services-site .home-capability-foot>a { display:inline-flex; align-items:center; gap:9px; font-size:14px; font-weight:550; }
+.services-site .home-text-link:hover, .services-site .home-underlined:hover, .services-site .home-capability-foot>a:hover { color:var(--home-blue); }
+.services-site .home-proofline { display:flex; align-items:center; gap:12px; margin-top:52px; color:#8d98a9; font-size:9px; }
+.services-site .home-proofline i { width:3px; height:3px; background:#9ca7b7; border-radius:50%; }
+.services-site .home-system { position:relative; min-height:440px; padding:20px 24px; border:1px solid #dfe7f3; border-radius:14px; background:#ffffffc9; box-shadow:0 32px 90px #19365f12; backdrop-filter:blur(10px); }
+.services-site .home-system-head, .services-site .home-system-foot { display:flex; align-items:center; justify-content:space-between; color:#8390a4; font-size:9px; }
+.services-site .home-live { display:flex; align-items:center; gap:7px; color:#478967; }
+.services-site .home-live i { width:6px; height:6px; border-radius:50%; background:#58b97e; }
+.services-site .home-system-center { height:348px; position:relative; display:grid; place-items:center; }
+.services-site .home-orbit { position:absolute; aspect-ratio:1; border:1px solid #e6edf7; border-radius:50%; }
+.services-site .home-orbit-one { width:210px; }.services-site .home-orbit-two { width:330px; border-style:dashed; border-color:#e9eef6; }
+.services-site .home-core { width:100px; height:100px; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:6px; border-radius:28px; color:#fff; background:linear-gradient(140deg,#3177fb,#1848ad); box-shadow:0 16px 42px #2869ed48; font:500 8px var(--font-mono); letter-spacing:.1em; z-index:1; }
+.services-site .home-core-mark { width:36px; height:36px; border-radius:6px; object-fit:cover; }
+.services-site .home-node { position:absolute; z-index:2; width:126px; padding:13px 10px; display:flex; flex-direction:column; align-items:center; gap:8px; border:1px solid #e4eaf2; border-radius:9px; color:#47638c; background:white; box-shadow:0 10px 28px #1e3d6b0c; }
+.services-site .home-node span { font:500 8px var(--font-mono); letter-spacing:.09em; color:#65748a; }
+.services-site .home-node-a { top:23px; left:calc(50% - 63px); }.services-site .home-node-b { top:50%; right:4px; transform:translateY(-50%); }.services-site .home-node-c { bottom:18px; left:calc(50% - 63px); }.services-site .home-node-d { top:50%; left:4px; transform:translateY(-50%); }
+.services-site .home-system-foot { justify-content:center; gap:14px; }.services-site .home-system-foot b { width:26px; height:1px; background:#c8d5e7; }
+.services-site .home-scroll { position:absolute; bottom:24px; left:max(32px,calc((100vw - 1240px)/2)); display:flex; align-items:center; gap:8px; color:#8c98aa; font:500 9px var(--font-mono); letter-spacing:.13em; }
+.services-site .home-intro, .services-site .home-offerings, .services-site .home-principles { padding:112px 0 120px; }
+.services-site .home-section-meta { display:flex; justify-content:space-between; padding-bottom:16px; border-bottom:1px solid var(--home-line); color:#8490a2; }
+.services-site .home-intro-layout { display:grid; grid-template-columns:1.15fr .7fr; gap:80px; align-items:end; padding:64px 0 52px; }
+.services-site .home-intro h2, .services-site .home-offerings h2, .services-site .home-ecosystem h2, .services-site .home-principles h2 { margin:0; font-size:clamp(50px,6vw,76px); line-height:.99; }
+.services-site .home-intro-copy { max-width:430px; padding-bottom:6px; }.services-site .home-intro-copy p, .services-site .home-offerings-heading>p, .services-site .home-ecosystem-copy>p:not(.home-kicker) { color:var(--home-muted); font-size:16px; line-height:1.75; }
+.services-site .home-underlined { margin-top:18px; border-bottom:1px solid #cbd4e1; padding-bottom:8px; }
+.services-site .home-practices { display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--home-line); border-radius:12px; overflow:hidden; }
+.services-site .home-practice { min-height:118px; padding:22px 20px; display:flex; align-items:flex-start; gap:14px; border-right:1px solid var(--home-line); transition:background .2s; }.services-site .home-practice:last-child { border-right:0; }.services-site .home-practice:hover { background:#f1f5fc; }
+.services-site .home-index { color:#8592a6; }.services-site .home-practice-copy { display:flex; flex:1; flex-direction:column; gap:8px; }.services-site .home-practice-copy b { font-size:13px; letter-spacing:.08em; }.services-site .home-practice-copy small { max-width:185px; color:var(--home-muted); font-size:12px; line-height:1.5; }.services-site .home-practice>svg { color:#8f9bad; }
+.services-site .home-dark-band { position:relative; padding:104px 0 110px; overflow:hidden; color:#fff; background:linear-gradient(118deg,#071326,#0b1b35 65%,#0d2142); }
+.services-site .home-dark-band:after { position:absolute; content:""; width:480px;height:480px;right:-100px;top:-260px;border:1px solid #ffffff0d;border-radius:50%;box-shadow:0 0 0 54px #ffffff06,0 0 0 110px #ffffff04; }
+.services-site .home-dark-inner { position:relative; z-index:1; display:grid; grid-template-columns:1.1fr .8fr; gap:100px; align-items:center; }.services-site .home-kicker-light { color:#96a8c5; }.services-site .home-dark-inner h2, .services-site .home-cta h2 { margin:25px 0 16px; font-size:clamp(45px,5.5vw,68px); line-height:1.02; }.services-site .home-dark-inner h2 em, .services-site .home-cta h2 em { color:#80adff; font-style:normal; }.services-site .home-dark-copy { max-width:430px; margin-bottom:27px; color:#a0afc7; font-size:15px; line-height:1.7; }.services-site .home-button-white { border:1px solid #ffffff44; color:#fff; }.services-site .home-button-white:hover { background:#fff; color:#071326; }
+.services-site .home-flow { position:relative; padding:4px 0; }.services-site .home-flow-line { position:absolute; top:30px; bottom:30px; left:20px; width:1px; background:linear-gradient(#5a91f8,#28446f); }.services-site .home-flow-step { position:relative; min-height:86px; display:flex; align-items:center; gap:20px; border-bottom:1px solid #ffffff19; }.services-site .home-flow-step:last-child { border:0; }.services-site .home-flow-step>span { z-index:1; width:40px;height:40px;display:grid;place-items:center;border:1px solid #4778cb;border-radius:50%;color:#8fb4ff;background:#0a1930;font:500 10px var(--font-mono); }.services-site .home-flow-step div { flex:1; display:flex; flex-direction:column; gap:5px; }.services-site .home-flow-step b { font-size:15px; font-weight:550; }.services-site .home-flow-step small { color:#9aaac1; font-size:12px; }.services-site .home-flow-step>svg { color:#8099bc; }
+.services-site .home-offerings { padding-bottom:100px; }.services-site .home-offerings-heading { display:flex; justify-content:space-between; align-items:end; padding:58px 0 40px; }.services-site .home-offerings-heading>p { max-width:350px; margin:0 0 5px; }.services-site .home-offer-grid { display:grid; grid-template-columns:1.15fr 1fr 1fr; gap:16px; }.services-site .home-offer { min-height:375px; position:relative; display:flex; flex-direction:column; align-items:flex-start; padding:24px; overflow:hidden; border:1px solid var(--home-line); border-radius:12px; background:white; transition:transform .25s,box-shadow .25s,border-color .25s; }.services-site .home-offer:hover { transform:translateY(-4px); border-color:#cbd9ed; box-shadow:0 18px 44px #1c365c10; }.services-site .home-offer-featured { background:linear-gradient(150deg,#f0f5ff,#fff 70%); }.services-site .home-offer-icon { display:grid; place-items:center; width:42px;height:42px;border-radius:10px;color:#2a68df;background:#eaf1ff; }.services-site .home-offer-num { margin-top:27px; color:#8a97a9; font-size:9px; }.services-site .home-offer h3 { margin:10px 0 8px; font-size:22px; letter-spacing:-.04em; }.services-site .home-offer>p { max-width:330px; margin:0; color:var(--home-muted); font-size:13px; line-height:1.65; }.services-site .home-card-link { display:inline-flex; align-items:center; gap:8px; margin-top:20px; color:#2766dd; font-size:12px; font-weight:600; }.services-site .home-window { width:80%; height:92px; margin:auto auto 0 6%; display:flex; align-items:flex-start; gap:6px; padding:10px; border:1px solid #dbe5f3; border-bottom:0; border-radius:9px 9px 0 0; background:#ffffffbd; }.services-site .home-window div { width:4px;height:4px;border-radius:50%;background:#b3c1d4; }.services-site .home-window span { position:absolute; right:26px; bottom:-20px; width:60%;height:82px;border:1px solid #8cb0f3;border-radius:7px 7px 0 0;background:linear-gradient(150deg,#eaf1ff,#fff); }.services-site .home-automate-art, .services-site .home-growth-art { height:100px; position:absolute; right:24px;bottom:12px;left:24px; opacity:.65; }.services-site .home-automate-art i { position:absolute; top:42px; width:58px;height:1px;background:#c9d8f1; }.services-site .home-automate-art i:nth-child(1){left:18%;transform:rotate(18deg)}.services-site .home-automate-art i:nth-child(2){left:45%}.services-site .home-automate-art i:nth-child(3){right:15%;transform:rotate(-18deg)}.services-site .home-automate-art b { position:absolute;left:50%;top:34px;width:18px;height:18px;border:1px solid #81a6ec;border-radius:5px;background:#eff4ff;box-shadow:-95px 25px 0 -2px #fff, -95px 25px 0 -1px #cfdbf1, 95px 25px 0 -2px #fff, 95px 25px 0 -1px #cfdbf1; }.services-site .home-growth-art i { position:absolute;bottom:12px;width:1px;background:#9db9ed;transform-origin:bottom; }.services-site .home-growth-art i:nth-child(1){left:24%;height:22px}.services-site .home-growth-art i:nth-child(2){left:40%;height:43px}.services-site .home-growth-art i:nth-child(3){left:57%;height:63px}.services-site .home-growth-art i:nth-child(4){left:74%;height:82px}.services-site .home-growth-art:after { content:"";position:absolute;left:20%;bottom:28px;width:60%;height:45px;border-top:1px solid #7ea4ea;border-radius:50%;transform:rotate(-15deg); }
+.services-site .home-capability-foot { display:flex;justify-content:space-between;align-items:center;padding-top:24px;color:#8490a2;font:500 9px var(--font-mono);letter-spacing:.1em; }.services-site .home-capability-foot>a { color:var(--home-ink); font:550 13px var(--font-body);letter-spacing:0; }
+.services-site .home-ecosystem { display:grid;grid-template-columns:.8fr 1.1fr;gap:100px;align-items:center;padding:94px 0 110px;border-top:1px solid var(--home-line); }.services-site .home-ecosystem h2 { margin:24px 0 15px; }.services-site .home-ecosystem h2 em, .services-site .home-principles h2 em { color:var(--home-blue);font-style:normal; }.services-site .home-ecosystem-copy>p:not(.home-kicker) { max-width:420px; }.services-site .home-ecosystem-cards { display:grid;grid-template-columns:1fr 1fr;gap:12px; }.services-site .home-eco-card { min-height:155px;padding:19px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;border:1px solid var(--home-line);border-radius:10px;background:#fff;transition:border-color .2s,transform .2s; }.services-site .home-eco-card:hover { transform:translateY(-3px);border-color:#a9c3f3; }.services-site .home-eco-card>span { color:#8794a6;font-size:9px; }.services-site .home-eco-card>b { align-self:flex-start;font-size:16px;font-weight:550;line-height:1.45; }.services-site .home-eco-card>svg { color:#3875ed; }.services-site .home-eco-card:last-child { grid-column:2; }
+.services-site .home-principles { padding-top:45px; }.services-site .home-principles-layout { display:grid;grid-template-columns:.8fr 1fr;gap:100px;padding-top:58px; }.services-site .home-principle-list { border-top:1px solid var(--home-line); }.services-site .home-principle { display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--home-line); }.services-site .home-principle>span { color:#8794a6; }.services-site .home-principle>div { flex:1; }.services-site .home-principle h3 { margin:0 0 6px;font-size:15px;font-weight:600; }.services-site .home-principle p { margin:0;color:var(--home-muted);font-size:13px;line-height:1.6; }.services-site .home-principle>svg { color:#8190a4; }
+.services-site .home-cta { position:relative; margin-top:30px;padding:88px 0 92px;overflow:hidden;color:#fff;background:#071326; }.services-site .home-cta-orb { position:absolute;right:8%;top:-220px;width:550px;height:550px;border:1px solid #3765ab55;border-radius:50%;box-shadow:0 0 0 60px #ffffff05,0 0 0 130px #ffffff04; }.services-site .home-cta-inner { position:relative;z-index:1; }.services-site .home-cta-bottom { display:flex;justify-content:space-between;align-items:end;gap:30px; }.services-site .home-cta-bottom>p { max-width:470px;margin:0;color:#a0afc7;font-size:15px;line-height:1.65; }
+@media(max-width:900px){.services-site .home-hero-inner{grid-template-columns:1fr .85fr;gap:25px}.services-site .home-system{min-height:380px;padding:16px}.services-site .home-system-center{height:290px}.services-site .home-node{width:110px}.services-site .home-orbit-one{width:170px}.services-site .home-orbit-two{width:270px}.services-site .home-intro-layout, .services-site .home-dark-inner, .services-site .home-ecosystem, .services-site .home-principles-layout{gap:48px}.services-site .home-offer-grid{grid-template-columns:1fr 1fr}.services-site .home-offer-featured{grid-column:span 2;min-height:340px}}
+@media(max-width:680px){.services-site .home-hero-inner, .services-site .home-section-meta, .services-site .home-intro-layout, .services-site .home-practices, .services-site .home-dark-inner, .services-site .home-offerings-heading, .services-site .home-offer-grid, .services-site .home-capability-foot, .services-site .home-ecosystem, .services-site .home-principles-layout, .services-site .home-cta-inner{width:calc(100% - 40px)}.services-site .home-hero{min-height:unset}.services-site .home-hero-inner{grid-template-columns:1fr;padding:72px 0 74px;gap:46px}.services-site .home-hero h1{font-size:clamp(58px,16vw,82px)}.services-site .home-lede{font-size:16px}.services-site .home-system{min-height:355px}.services-site .home-system-center{height:275px}.services-site .home-scroll{left:20px;bottom:18px}.services-site .home-proofline{gap:8px;font-size:8px;margin-top:36px}.services-site .home-intro, .services-site .home-offerings, .services-site .home-principles{padding:76px 0}.services-site .home-section-meta{font-size:8px;gap:16px}.services-site .home-intro-layout, .services-site .home-dark-inner, .services-site .home-ecosystem, .services-site .home-principles-layout{grid-template-columns:1fr;gap:28px;padding-top:44px}.services-site .home-intro h2, .services-site .home-offerings h2, .services-site .home-ecosystem h2, .services-site .home-principles h2{font-size:clamp(48px,13vw,66px)}.services-site .home-intro-copy{max-width:unset}.services-site .home-practices{grid-template-columns:1fr 1fr}.services-site .home-practice{min-height:106px;padding:16px 12px;gap:9px;border-bottom:1px solid var(--home-line)}.services-site .home-practice:nth-child(2){border-right:0}.services-site .home-practice:nth-child(n+3){border-bottom:0}.services-site .home-practice-copy b{font-size:11px}.services-site .home-practice-copy small{font-size:11px}.services-site .home-dark-band{padding:76px 0}.services-site .home-dark-inner{gap:42px}.services-site .home-dark-inner h2, .services-site .home-cta h2{font-size:clamp(42px,11vw,58px)}.services-site .home-flow-step{min-height:78px}.services-site .home-offerings-heading{display:block;padding:44px 0 28px}.services-site .home-offerings-heading>p{margin-top:18px}.services-site .home-offer-grid{grid-template-columns:1fr}.services-site .home-offer, .services-site .home-offer-featured{grid-column:auto;min-height:330px}.services-site .home-capability-foot{align-items:flex-start;gap:18px;flex-direction:column;font-size:8px}.services-site .home-ecosystem{padding:72px 0}.services-site .home-eco-card{min-height:140px;padding:15px}.services-site .home-eco-card>b{font-size:14px}.services-site .home-principles{padding-top:20px}.services-site .home-principles-layout{padding-top:42px}.services-site .home-cta{margin-top:5px;padding:72px 0}.services-site .home-cta-bottom{align-items:flex-start;flex-direction:column}.services-site .home-cta-bottom>p{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.services-site .home-button, .services-site .home-offer, .services-site .home-eco-card{transition:none}}
+
+@theme inline {
+  /* Brand Identity - Matrix UI */
+  --color-primary: #2869ED;
+  --color-accent: #80ADFF;
+  --color-trust: #155E75;
+  --color-lavender: #A9C5FF;
+
+  /* Surface Scale */
+  --color-surface-dark: #071326;
+  --color-surface-base: #111D33;
+  --color-surface-light: #F7F9FC;
+
+  /* Typography
+   *
+   * Manrope and Cormorant Garamond were removed from `layout.tsx`: the design
+   * language permits exactly three families — Inter Tight, Inter, JetBrains
+   * Mono. These two tokens are the sitewide roots for headings and body, so
+   * they now resolve the loaded families instead of fonts that no longer
+   * exist. Every page keeps working; the type just changes face.
+   */
+  --font-display: var(--font-inter-tight), "Inter Tight", var(--font-inter),
+    system-ui, sans-serif;
+  --font-body: var(--font-inter), "Inter", system-ui, sans-serif;
+
+  /* Spacing & Radius */
+  --spacing-4: 0.25rem;
+  --radius-button: 12px;
+  --radius-card: 24px;
+
+  /*
+   * ---------------------------------------------------------------------
+   * /services subtree tokens (ADDITIVE ONLY)
+   * ---------------------------------------------------------------------
+   * Nothing above is renamed or removed. Non-services pages (/ , /about,
+  * /products, /vision, /architecture, /contact) keep resolving
+  * against the original tokens above.
+   */
+
+  /* Neutrals — these carry the /services page. */
+  --color-bg: #0b0b0f;
+  --color-surface-1: #121218;
+  --color-surface-2: #1a1a21;
+  --color-line: #26262e;
+
+  /* Brand is a signal, not a surface. */
+  --color-brand: #3978f6;
+
+  /*
+   * NOTE (deviation from the implementation prompt, deliberate):
+   * The prompt asks for `--color-accent: #d9c08a`. `--color-accent` ALREADY
+  * exists in this theme as #dec178 and is consumed by /, /about
+   * and /products. Redefining it here would change how those pages render,
+   * which breaks hard rule 4 and the verification item "no page outside
+   * /services renders differently". The services gold is therefore
+   * published under a new, non-colliding name.
+   */
+  --color-signal: #91b7ff;
+
+  --color-text: #ededf0;
+  --color-text-muted: #8a8a96;
+
+  /*
+   * Radius — Veltro system. Three values only: 10px tile, 20px panel,
+   * 999px pill. The token NAMES are preserved so every page that already
+   * resolves `rounded-panel` / `rounded-tile` / `rounded-card` /
+   * `rounded-button` keeps working, but the VALUES are now the reference's.
+   * 4px / 8px / 12px / 24px are retired sitewide.
+   */
+  --radius-tile: 10px;
+  --radius-panel: 20px;
+  --radius-pill: 999px;
+  --radius-card: 20px;
+  --radius-button: 999px;
+
+  /*
+   * Type scale for the /services subtree only. --font-display and
+   * --font-body above are untouched; other pages depend on them.
+   *
+   * Display: Inter Tight (editorial), falling back to Inter then system.
+   * Mono:    JetBrains Mono (instrumentation), falling back to the platform
+   *          monospace stack.
+   */
+  --font-display-services: var(--font-inter-tight), var(--font-inter),
+    system-ui, sans-serif;
+  --font-mono-services: var(--font-jetbrains-mono), ui-monospace,
+    "JetBrains Mono", monospace;
+
+  /*
+   * ----------------------------------------------------------------------
+   * TEMAHUX / VELTRO DESIGN SYSTEM
+   * ----------------------------------------------------------------------
+   * Light neutral base, near-black ink, ONE loud accent used sparingly,
+   * deep indigo bands for contrast sections, and a pastel tint family for
+   * cards. Additive: nothing above is renamed or removed.
+   */
+
+  /* Neutrals */
+  --color-tx-ink: #12121a;
+  --color-tx-ink-soft: #5a5a66;
+  --color-tx-base: #f7f7f5;
+  --color-tx-base-2: #f0f0ed;
+  --color-tx-white: #ffffff;
+  --color-tx-line: #e5e5e0;
+
+  /* Brand + deep bands */
+  --color-tx-brand: #2869ed;
+  --color-tx-brand-deep: #1746a2;
+  --color-tx-band: #071326;
+  --color-tx-band-2: #091a33;
+
+  /* The single loud accent — used like the reference uses its lime. */
+  --color-tx-accent: #80adff;
+
+  /* Pastel tint system */
+  --color-tx-tint-violet: #ede9fe;
+  --color-tx-tint-mint: #d7f5e4;
+  --color-tx-tint-sky: #dce9fe;
+  --color-tx-tint-peach: #fce8d5;
+  --color-tx-tint-lime: #eaf7d4;
+  --color-tx-tint-sand: #f3eada;
+
+  /* Typography — the ONLY three families permitted sitewide. */
+  --font-primary: var(--font-inter-tight), var(--font-inter), system-ui,
+    sans-serif;
+  --font-secondary: var(--font-inter), system-ui, sans-serif;
+  --font-ternary: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, "JetBrains Mono",
+    monospace;
+
+  /* Layout */
+  --container-max: 1280px;
+}
+
+.services-site {
+  --background: var(--color-surface-light);
+  --foreground: #171717;
+}
+
+.services-site .dark {
+  --background: var(--color-surface-dark);
+  --foreground: #ededed;
+}
+
+.services-site {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.services-site {
+  scroll-behavior: smooth;
+}
+
+.services-site h1, .services-site h2, .services-site h3, .services-site h4, .services-site .font-display {
+  font-family: var(--font-display);
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.services-site .animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.services-site .animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+/* =====================================================================
+   /services subtree layer
+   ---------------------------------------------------------------------
+   Plain classes, all namespaced `svc-`, so they cannot collide with any
+   existing utility or page. Additive.
+   ===================================================================== */
+
+/* Layout: 1200px max content width. */
+.services-site .svc-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 32px;
+}
+
+@media (max-width: 767px) {
+  .services-site .svc-container {
+    padding-inline: 20px;
+  }
+}
+
+/* Vertical section rhythm: 128 desktop / 96 tablet / 72 mobile. */
+.services-site .svc-section {
+  padding-block: 128px;
+}
+
+/*
+ * The Navbar is `fixed` at 64px (mobile) / 80px (desktop) and is out of
+ * scope, so first sections in the services subtree clear it explicitly.
+ */
+.services-site .svc-hero {
+  padding-top: 184px;
+  padding-bottom: 128px;
+}
+
+.services-site .svc-page-top {
+  padding-top: 168px;
+}
+
+@media (max-width: 1279px) {
+  .services-site .svc-hero {
+    padding-top: 152px;
+    padding-bottom: 96px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-site .svc-hero {
+    padding-top: 128px;
+    padding-bottom: 72px;
+  }
+
+  .services-site .svc-page-top {
+    padding-top: 128px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .services-site .svc-section {
+    padding-block: 96px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-site .svc-section {
+    padding-block: 72px;
+  }
+}
+
+/*
+ * Monospace instrumentation type. Eyebrows, indices, prices, metadata and
+ * technology tags all use this — it is what makes the page read as
+ * instrumentation rather than marketing.
+ */
+.services-site .svc-mono {
+  font-family: var(--font-mono-services);
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.services-site .svc-mono-sm {
+  font-family: var(--font-mono-services);
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/*
+ * Prices. Kept as its own class because `.svc-mono` above is unlayered CSS
+ * and would win against a Tailwind font-size utility on the same element.
+ * Colour is left to a utility so it can vary.
+ */
+.services-site .svc-price {
+  font-family: var(--font-mono-services);
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+/* One violet/blue hairline for the whole experience — the final CTA only. */
+.services-site .svc-cta-hairline {
+  height: 1px;
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-brand) 35%,
+    #3d6fe0 65%,
+    transparent
+  );
+}
+
+/* --- Hero architecture diagram: the single permitted infinite loop ---
+ *
+ * The signal walks the six nodes in ArchitectureDiagram.tsx — IDEA (0,0),
+ * PRODUCT (160,0), AUDIENCE (160,70), WORKFLOW (160,140), SYSTEM (320,140),
+ * RUNNING (320,210) — holding at each before stepping to the next, then
+ * resting on RUNNING and fading out to restart.
+ */
+@keyframes svc-node-run {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 0;
+  }
+  5% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  /* IDEA -> PRODUCT */
+  12% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  17% {
+    transform: translate(160px, 0px);
+    opacity: 1;
+  }
+  /* PRODUCT -> AUDIENCE */
+  24% {
+    transform: translate(160px, 0px);
+    opacity: 1;
+  }
+  29% {
+    transform: translate(160px, 70px);
+    opacity: 1;
+  }
+  /* AUDIENCE -> WORKFLOW */
+  36% {
+    transform: translate(160px, 70px);
+    opacity: 1;
+  }
+  41% {
+    transform: translate(160px, 140px);
+    opacity: 1;
+  }
+  /* WORKFLOW -> SYSTEM */
+  48% {
+    transform: translate(160px, 140px);
+    opacity: 1;
+  }
+  53% {
+    transform: translate(320px, 140px);
+    opacity: 1;
+  }
+  /* SYSTEM -> RUNNING, then rest on the OPERATE rail */
+  60% {
+    transform: translate(320px, 140px);
+    opacity: 1;
+  }
+  65% {
+    transform: translate(320px, 210px);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(320px, 210px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(320px, 210px);
+    opacity: 0;
+  }
+}
+
+.services-site .svc-diagram-node {
+  /* Pinned so `translate` resolves against the SVG viewBox in user units,
+     regardless of the browser's default `transform-box`. */
+  transform-box: view-box;
+  animation: svc-node-run 6s linear infinite;
+}
+
+/* Pause the loop on hover of the diagram, and whenever anything in the
+   hero holds focus (the hero CTAs). No infinite motion while reading. */
+.services-site .svc-hero-art:hover .svc-diagram-node, .services-site .svc-hero:focus-within .svc-diagram-node {
+  animation-play-state: paused;
+}
+
+/*
+ * Global reduced-motion contract. Nothing new animates — infinite or
+ * otherwise — for users who have asked for reduced motion.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .services-site *, .services-site *::before, .services-site *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .services-site .svc-diagram-node {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+
+  .services-site {
+    scroll-behavior: auto;
+  }
+}
+
+/* Practice switcher panel cross-fade. The wrapper is keyed on the active
+   practice so this replays on selection; the global reduced-motion block
+   reduces it to an instant swap. */
+@keyframes svc-panel-fade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.services-site .svc-panel-in {
+  animation: svc-panel-fade 220ms ease-out both;
+}
+
+/* FAQ disclosure. Plain CSS so it does not depend on a Tailwind `open`
+   variant being available. */
+.services-site .svc-faq summary {
+  list-style: none;
+}
+
+.services-site .svc-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.services-site .svc-faq-open {
+  display: none;
+}
+
+.services-site .svc-faq[open] .svc-faq-open {
+  display: inline;
+}
+
+.services-site .svc-faq[open] .svc-faq-closed {
+  display: none;
+}
+
+/*
+ * First-section clearance for standalone services pages. Declared LAST so it
+ * wins against the .svc-section rhythm rules above (all of these are
+ * unlayered, so source order decides).
+ */
+.services-site .svc-page-top {
+  padding-top: 168px;
+}
+
+@media (max-width: 1279px) {
+  .services-site .svc-page-top {
+    padding-top: 132px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-site .svc-page-top {
+    padding-top: 116px;
+  }
+}
+
+/*
+ * Diagram palette. Inline SVG strokes/fills resolve through plain CSS classes
+ * with literal fallbacks, so the diagram renders correctly whether or not the
+ * @theme inline tokens are emitted as custom properties.
+ */
+.services-site .svc-diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.services-site .svc-diagram-rail {
+  fill: none;
+  stroke: var(--color-line, #26262e);
+  stroke-width: 1;
+}
+
+.services-site .svc-diagram-wire {
+  fill: none;
+  stroke: var(--color-line, #26262e);
+  stroke-width: 1;
+  stroke-dasharray: 2 4;
+}
+
+.services-site .svc-node {
+  fill: var(--color-surface-1, #121218);
+  stroke: var(--color-line, #26262e);
+  stroke-width: 1;
+}
+
+.services-site .svc-node-live {
+  fill: var(--color-brand, #5b4be8);
+  stroke: none;
+}
+
+.services-site .svc-diagram-label {
+  fill: var(--color-text-muted, #8a8a96);
+  font-family: var(--font-mono-services, ui-monospace, monospace);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* =====================================================================
+ * TEMAHUX / VELTRO DESIGN SYSTEM — layout, type, controls
+ * ===================================================================== */
+
+/* 1280px container, 24px gutters. */
+.services-site .tx-container {
+  width: 100%;
+  max-width: var(--container-max, 1280px);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+/* Section rhythm — separation by background change + whitespace, not rules. */
+.services-site .tx-section {
+  padding-block: 120px;
+}
+
+.services-site .tx-section-sm {
+  padding-block: 64px;
+}
+
+@media (max-width: 767px) {
+  .services-site .tx-section {
+    padding-block: 64px;
+  }
+}
+
+/* Eyebrow / meta: mono, uppercase, 0.16em tracking. */
+.services-site .tx-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .services-site .tx-eyebrow {
+    font-size: 12px;
+  }
+}
+
+/* Type scale: hero 60-72, section 40-48, sub 28-32, body 16-18. */
+.services-site .tx-h1 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: clamp(40px, 7vw, 72px);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+}
+
+.services-site .tx-h2 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: clamp(30px, 4.4vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.services-site .tx-h3 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+}
+
+.services-site .tx-body {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .services-site .tx-body {
+    font-size: 18px;
+  }
+}
+
+/* Pills — the reference leans on full-round hard. */
+.services-site .tx-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-family: var(--font-secondary);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 250ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 250ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 250ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.services-site .tx-btn:hover {
+  transform: translateY(-2px);
+}
+
+.services-site .tx-btn-primary {
+  background-color: var(--color-tx-ink);
+  color: var(--color-tx-white);
+}
+
+.services-site .tx-btn-primary:hover {
+  background-color: var(--color-tx-brand);
+}
+
+.services-site .tx-btn-accent {
+  background-color: var(--color-tx-accent);
+  color: var(--color-tx-ink);
+}
+
+.services-site .tx-btn-accent:hover {
+  background-color: var(--color-tx-ink);
+  color: var(--color-tx-white);
+}
+
+.services-site .tx-btn-outline {
+  background-color: transparent;
+  color: var(--color-tx-ink);
+  border-color: var(--color-tx-line);
+}
+
+.services-site .tx-btn-outline:hover {
+  border-color: var(--color-tx-ink);
+}
+
+/* Visible focus ring, everywhere. */
+.services-site .tx-btn:focus-visible, .services-site a:focus-visible, .services-site button:focus-visible, .services-site summary:focus-visible {
+  outline: 2px solid var(--color-tx-brand);
+  outline-offset: 3px;
+  border-radius: 999px;
+}
+
+/* Deep indigo contrast bands. */
+.services-site .tx-band {
+  background-color: var(--color-tx-band);
+  color: var(--color-tx-white);
+}
+
+.services-site .tx-band-2 {
+  background-color: var(--color-tx-band-2);
+  color: var(--color-tx-white);
+}
+
+.services-site .tx-band .tx-btn-outline {
+  color: var(--color-tx-white);
+  border-color: rgb(255 255 255 / 0.24);
+}
+
+.services-site .tx-band .tx-btn-outline:hover {
+  border-color: var(--color-tx-white);
+}
+
+.services-site .tx-band .tx-btn-primary {
+  background-color: var(--color-tx-white);
+  color: var(--color-tx-ink);
+}
+
+.services-site .tx-band .tx-btn-primary:hover {
+  background-color: var(--color-tx-accent);
+  color: var(--color-tx-ink);
+}
+
+/* Editorial marquee — CSS only, never JS. */
+.services-site .tx-marquee {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  user-select: none;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+}
+
+.services-site .tx-marquee-track {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 56px;
+  padding-inline: 28px;
+  min-width: 100%;
+  animation: tx-marquee 38s linear infinite;
+}
+
+.services-site .tx-marquee:hover .tx-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes tx-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Dot texture behind footer / dark bands. */
+.services-site .tx-dot-pattern {
+  background-image: radial-gradient(
+    rgb(255 255 255 / 0.14) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+}
+
+.services-site .tx-dot-pattern-dark {
+  background-image: radial-gradient(rgb(18 18 26 / 0.1) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Scroll reveal — the one shared motion primitive. */
+.services-site .tx-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.services-site .tx-reveal[data-direction="left"] {
+  transform: translateX(-28px);
+}
+
+.services-site .tx-reveal[data-direction="right"] {
+  transform: translateX(28px);
+}
+
+.services-site .tx-reveal[data-revealed="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Masked imagery — asymmetric silhouette, never a plain rounded rectangle.
+   Hand-authored paths; a real <img> inside inherits the frame. */
+.services-site .tx-mask-notch {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 76px),
+    calc(100% - 76px) 100%,
+    0 100%
+  );
+}
+
+.services-site .tx-mask-arch {
+  border-radius: 200px 200px 20px 20px;
+}
+
+.services-site .tx-mask-blob {
+  border-radius: 44% 56% 58% 42% / 46% 40% 60% 54%;
+}
+
+.services-site .tx-mask-round {
+  border-radius: 999px;
+}
+
+/* Reduced motion — no infinite loops, no reveals. */
+@media (prefers-reduced-motion: reduce) {
+  .services-site .tx-marquee-track {
+    animation: none !important;
+  }
+
+  .services-site .tx-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .services-site .tx-btn:hover {
+    transform: none;
+  }
+}

@@ -1,3 +1,0 @@
-import Link from "next/link";
-import Navbar from "@/components/layout/Navbar";
-export default function NotFound(){return <><Navbar/><main className="grid min-h-[65vh] place-items-center bg-tx-base px-5 text-tx-ink"><div className="max-w-xl py-24 text-center"><p className="tx-eyebrow text-tx-brand">404 / PAGE NOT FOUND</p><h1 className="mt-5 text-6xl font-semibold tracking-tight">This page isn’t here.</h1><p className="mt-5 text-base leading-relaxed text-tx-ink-soft">The link may have changed, or the page may no longer be available.</p><Link href="/" className="tx-btn tx-btn-primary mt-8">Back to home</Link></div></main></>}
