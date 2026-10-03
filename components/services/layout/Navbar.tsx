@@ -356,7 +356,7 @@ function NavbarContent({ pathname }: { pathname: string }) {
             onMouseLeave={closeOnHover}
             className="tx-desktop-menu-in pointer-events-auto absolute left-1/2 top-full z-50 hidden w-[min(1120px,calc(100vw-48px))] -translate-x-1/2 lg:block"
           >
-            <div className="rounded-panel bg-tx-white p-8">
+            <div className="rounded-panel border border-tx-line bg-tx-white p-8">
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                 <div>
                   <p className="tx-eyebrow text-tx-ink-soft">Services</p>

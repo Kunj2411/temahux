@@ -6,7 +6,7 @@ import ServiceFooter from "@services/components/services/v2/ServiceFooter";
 import { conversionLabel, siteUrl } from "@services/lib/services";
 
 export const metadata: Metadata = {
-  title: "Web Development — Websites, e-commerce and web applications | Temahux",
+  title: "Web Development — Websites, E-Commerce & Apps",
   description:
     "Business websites, landing pages and e-commerce stores, mobile-responsive from the first build. Published entry point ₹3,000+.",
   alternates: { canonical: "/services/services/web-development" },

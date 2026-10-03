@@ -16,20 +16,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.temahux.com"),
-  title: { default: "TEMAHUX Academy", template: "%s | TEMAHUX Academy" },
-  description: "A modern STEM, coding, AI, robotics, and project-based learning ecosystem.",
-  alternates: { canonical: "/academy" },
+  title: { default: "TEMAHUX Academy — Learn AI, Coding, Robotics & STEM", template: "%s | TEMAHUX Academy" },
+  description: "A modern STEM, coding, AI, robotics, and project-based learning ecosystem for students and future builders.",
   openGraph: {
     type: "website",
     siteName: "TEMAHUX Academy",
-    title: "TEMAHUX Academy",
-    description: "A modern STEM, coding, AI, robotics, and project-based learning ecosystem.",
-    url: "/academy",
+    title: "TEMAHUX Academy — Learn AI, Coding, Robotics & STEM",
+    description: "A modern STEM, coding, AI, robotics, and project-based learning ecosystem for students and future builders.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TEMAHUX Academy",
-    description: "A modern STEM, coding, AI, robotics, and project-based learning ecosystem.",
+    title: "TEMAHUX Academy — Learn AI, Coding, Robotics & STEM",
+    description: "A modern STEM, coding, AI, robotics, and project-based learning ecosystem for students and future builders.",
   },
   icons: { icon: "/assets/academy/favicon.png" },
 };

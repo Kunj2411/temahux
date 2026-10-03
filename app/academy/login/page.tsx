@@ -4,4 +4,7 @@ export default function LoginPage() {
   redirect("/academy/admin/login");
 }
 
-export const metadata = { alternates: { canonical: "/academy/login" } };
+export const metadata = {
+  robots: { index: false, follow: false },
+  alternates: { canonical: "/academy/login" },
+};

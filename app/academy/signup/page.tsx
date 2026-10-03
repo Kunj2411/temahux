@@ -11,4 +11,8 @@ export default function SignupPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/signup" } };
+export const metadata = {
+  title: "Sign Up — Start Learning at TEMAHUX Academy",
+  description: "Create your TEMAHUX Academy account to explore learning pathways, track your progress, and build a portfolio of real projects.",
+  alternates: { canonical: "/academy/signup" },
+};

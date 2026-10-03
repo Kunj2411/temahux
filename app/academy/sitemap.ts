@@ -6,10 +6,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     "",
     "/about",
+    "/ai",
+    "/ar-vr",
+    "/blog",
     "/career",
     "/classes",
     "/contact",
-    "/courses",
     "/faq",
     "/how-it-works",
     "/learning",

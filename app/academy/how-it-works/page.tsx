@@ -27,4 +27,8 @@ export default function HowItWorksPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/how-it-works" } };
+export const metadata = {
+  title: "How TEMAHUX Academy Works — Discover, Learn, Build",
+  description: "Every TEMAHUX learning journey follows a cycle of discovery, understanding, building, and steady growth from curiosity to applied skills.",
+  alternates: { canonical: "/academy/how-it-works" },
+};

@@ -20,4 +20,8 @@ export default function ClassesPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/classes" } };
+export const metadata = {
+  title: "Classes — STEM, Coding, Robotics, AI & More",
+  description: "Explore TEMAHUX classes across STEM, coding, robotics, AI, and immersive design. Each class is built to help learners discover, practice, and create.",
+  alternates: { canonical: "/academy/classes" },
+};

@@ -20,4 +20,8 @@ export default function BlogPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/blog" } };
+export const metadata = {
+  title: "Blog — Insights for Curious Technology Builders",
+  description: "Articles and notes from TEMAHUX Academy to help students learn through reflection, practice, and real-world technology storytelling.",
+  alternates: { canonical: "/academy/blog" },
+};

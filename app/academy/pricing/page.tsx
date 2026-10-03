@@ -24,4 +24,8 @@ export default function PricingPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/pricing" } };
+export const metadata = {
+  title: "Academy Pricing — Learning Programs & Plans",
+  description: "Explore TEMAHUX Academy learning programs. Pricing is flexible and designed to guide learners toward the right pathway.",
+  alternates: { canonical: "/academy/pricing" },
+};

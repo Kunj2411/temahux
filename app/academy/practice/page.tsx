@@ -21,4 +21,8 @@ export default function PracticePage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/practice" } };
+export const metadata = {
+  title: "Practice — Deliberate Problem Solving & Coding Challenges",
+  description: "Practice coding, DSA, debugging, AI challenges, and robotics problems. Turn understanding into fluency and confidence.",
+  alternates: { canonical: "/academy/practice" },
+};

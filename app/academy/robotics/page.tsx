@@ -21,4 +21,8 @@ export default function RoboticsPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/robotics" } };
+export const metadata = {
+  title: "Robotics — Arduino, Sensors, Motors & IoT Projects",
+  description: "Robotics at TEMAHUX Academy brings together coding, electronics, sensors, movement, and systems thinking in a challenge-led format.",
+  alternates: { canonical: "/academy/robotics" },
+};

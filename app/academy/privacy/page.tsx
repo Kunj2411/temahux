@@ -17,4 +17,8 @@ export default function PrivacyPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/privacy" } };
+export const metadata = {
+  title: "Privacy Policy — TEMAHUX Academy",
+  description: "How TEMAHUX Academy handles learner data, personal privacy, and responsible data practices.",
+  alternates: { canonical: "/academy/privacy" },
+};

@@ -24,4 +24,8 @@ export default function ParentsPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/parents" } };
+export const metadata = {
+  title: "For Parents — Supporting Your Child’s Learning Journey",
+  description: "TEMAHUX Academy offers structured, safe, and progressive technology learning for children. Clear pathways, milestones, and a focus on wellbeing.",
+  alternates: { canonical: "/academy/parents" },
+};

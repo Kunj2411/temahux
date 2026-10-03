@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* TEMAHUX home experience: electric blue, deep ink and restrained motion. */
 .services-site .home-shell { --home-ink:#101827; --home-muted:#687489; --home-blue:#3978f6; --home-navy:#071326; --home-line:#e5eaf1; color:var(--home-ink); background:#fbfcfe; overflow:hidden; }
 @keyframes home-reveal { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }

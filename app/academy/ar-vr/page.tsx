@@ -21,4 +21,8 @@ export default function ARVRPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/ar-vr" } };
+export const metadata = {
+  title: "AR / VR — Design Immersive & Spatial Experiences",
+  description: "Explore augmented reality, virtual reality, 3D design, and Unity at TEMAHUX Academy. Build compelling digital worlds and interactive environments.",
+  alternates: { canonical: "/academy/ar-vr" },
+};

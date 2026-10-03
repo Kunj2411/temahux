@@ -739,7 +739,7 @@ export const workCopy = {
   emptyStateDetail:
     "Nothing published here yet. We only list work we can evidence, so this section stays empty until the first verified case study is cleared for publication.",
   emptyStateCta: conversionLabel,
-  emptyStateCtaHref: "/services/contact-consultation",
+  emptyStateCtaHref: "/services/services/contact-consultation",
 };
 
 export const engagementCopy = {

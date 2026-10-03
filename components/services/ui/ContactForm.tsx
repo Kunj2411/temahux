@@ -55,9 +55,7 @@ export default function ContactForm({ variant = "contact" }: ContactFormProps) {
     } catch {
       setStatus("error");
       setFeedback(
-        process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
-          ? `Something went wrong while submitting the form. Please try again or email ${contact.email}.`
-          : `Online form delivery is not configured. Please email ${contact.email}.`,
+        `Something went wrong while submitting the form. Please try again or email ${contact.email}.`,
       );
     } finally {
       submitting.current = false;

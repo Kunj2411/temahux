@@ -20,4 +20,8 @@ export default function ProjectsPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/projects" } };
+export const metadata = {
+  title: "Projects — Build Real Technology with What You Learn",
+  description: "Every TEMAHUX project connects concepts and tools to a real outcome, turning learning into confident action.",
+  alternates: { canonical: "/academy/projects" },
+};

@@ -1,22 +1,22 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "TEMAHUX — where everything is possible.",
+  title: "TEMAHUX \u2014 Digital Systems, AI & Automation",
   description:
-    "One continuous, procedural 3D scroll journey: Origin, Services, Academy, Products, Return.",
+    "Temahux builds digital products, websites, software, AI solutions and automation systems. Explore Services, Academy, and Products.",
   metadataBase: new URL("https://www.temahux.com"),
   alternates: {
     canonical: "https://www.temahux.com/",
   },
   openGraph: {
-    title: "TEMAHUX",
-    description: "where everything is possible.",
+    title: "TEMAHUX \u2014 Digital Systems, AI & Automation",
+    description: "Temahux builds digital products, websites, software, AI solutions and automation systems.",
     type: "website",
     url: "https://www.temahux.com/",
   },
   twitter: {
-    title: "TEMAHUX",
-    description: "where everything is possible.",
+    title: "TEMAHUX \u2014 Digital Systems, AI & Automation",
+    description: "Temahux builds digital products, websites, software, AI solutions and automation systems.",
   },
 };
 

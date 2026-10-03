@@ -140,9 +140,7 @@ export function PublicInquiryForm({ kind }: { kind: FormKind }) {
         {status === "success"
           ? statusCopy[kind]
           : status === "error"
-            ? process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
-              ? "Something went wrong while submitting the form. Please try again."
-              : "Online form delivery is not configured yet. Please try again later or contact kunj.joshi@temahux.com."
+            ? "Something went wrong while submitting the form. Please try again or contact kunj.joshi@temahux.com."
             : ""}
       </p>
     </form>

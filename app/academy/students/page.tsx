@@ -24,4 +24,8 @@ export default function StudentsPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/students" } };
+export const metadata = {
+  title: "For Students — Build Real Skills Through Guided Challenges",
+  description: "Students at TEMAHUX Academy learn by asking better questions, solving meaningful problems, and building real technology projects.",
+  alternates: { canonical: "/academy/students" },
+};

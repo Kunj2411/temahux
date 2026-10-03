@@ -22,18 +22,16 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.temahux.com"),
-  title: { default: siteTitle, template: "%s | Temahux Services" },
+  title: { default: siteTitle, template: "%s | Temahux" },
   description: siteDescription,
   applicationName: "Temahux Services",
   creator: "Temahux",
-  alternates: { canonical: "/services" },
   twitter: { card: "summary_large_image", title: siteTitle, description: siteDescription },
   openGraph: {
     type: "website",
-    siteName: "Temahux Services",
+    siteName: "Temahux",
     title: siteTitle,
     description: siteDescription,
-    url: "/services",
   },
   manifest: "/assets/services/site.webmanifest",
   icons: { icon: "/assets/services/favicon.svg" },

@@ -4,10 +4,10 @@ import { RoadmapCard } from "@academy/components/roadmap-card";
 import { getRoadmaps } from "@academy/lib/data/catalog";
 
 export const metadata: Metadata = {
-  title: "Roadmaps",
+  title: "Learning Roadmaps — Know What to Learn Next",
   description: "Choose a TEMAHUX learning roadmap and turn your technology goals into clear next steps.",
   alternates: { canonical: "/academy/roadmaps" },
-  openGraph: { title: "Roadmaps | TEMAHUX Academy", description: "Turn your goals into a clear learning path." },
+  openGraph: { title: "Learning Roadmaps — Know What to Learn Next | TEMAHUX Academy", description: "Turn your goals into a clear learning path." },
 };
 
 export default async function RoadmapsPage() {

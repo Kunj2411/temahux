@@ -5,8 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/_next/", "/api/"],
     },
-    sitemap: "https://www.temahux.com/academy/sitemap.xml",
+    sitemap: "https://www.temahux.com/sitemap.xml",
   };
 }

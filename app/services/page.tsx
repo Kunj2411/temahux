@@ -6,10 +6,10 @@ import Navbar from "@services/components/layout/Navbar";
 import { practices, siteUrl } from "@services/lib/services";
 
 export const metadata: Metadata = {
-  title: "Temahux — Technology that moves work forward",
+  title: "Temahux Services — Web, AI & Digital Growth",
   description: "Temahux builds, grows, automates and operates useful digital systems for businesses and institutions.",
   alternates: { canonical: "/services" },
-  openGraph: { title: "Temahux — Technology that moves work forward", description: "Useful digital systems, built around the work they need to do.", url: siteUrl, type: "website" },
+  openGraph: { title: "Temahux Services — Web, AI & Digital Growth", description: "Useful digital systems, built around the work they need to do.", url: siteUrl, type: "website" },
 };
 
 const principles = [

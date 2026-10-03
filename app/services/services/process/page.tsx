@@ -5,7 +5,7 @@ import ServiceFooter from "@services/components/services/v2/ServiceFooter";
 import { siteUrl } from "@services/lib/services";
 
 export const metadata: Metadata = {
-  title: "Process — Five stages, and you know which one you're in | Temahux",
+  title: "Process — Five Stages from Scope to Support",
   description:
     "Scope, Design, Build, Launch, Support. What you receive at each stage and a typical duration, from a 1-week scope to a 1, 3 or 6-month support window.",
   alternates: { canonical: "/services/services/process" },

@@ -199,4 +199,8 @@ export default async function Home() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy" } };
+export const metadata = {
+  title: "TEMAHUX Academy — Learn AI, Coding, Robotics & STEM",
+  description: "TEMAHUX Academy helps students and future builders move from curiosity to confident practice, product thinking, and real-world technology skills.",
+  alternates: { canonical: "/academy" },
+};

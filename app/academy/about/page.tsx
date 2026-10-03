@@ -26,4 +26,8 @@ export default function AboutPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/about" } };
+export const metadata = {
+  title: "About TEMAHUX Academy — Our Learning Philosophy",
+  description: "TEMAHUX is built around active learning: understand deeply, practice consistently, build real projects, and grow into confident technology creators.",
+  alternates: { canonical: "/academy/about" },
+};

@@ -13,7 +13,7 @@ export async function submitToWeb3Forms(
 ) {
   const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
   if (!accessKey) {
-    throw new Error("WEB3FORMS_ACCESS_KEY is required.");
+    throw new Error("Form delivery is not configured.");
   }
 
   const formData = new FormData(form);

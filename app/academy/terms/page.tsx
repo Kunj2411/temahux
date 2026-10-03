@@ -16,4 +16,8 @@ export default function TermsPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/terms" } };
+export const metadata = {
+  title: "Terms of Use — TEMAHUX Academy",
+  description: "Terms and expectations for educational interaction, access, and platform use at TEMAHUX Academy.",
+  alternates: { canonical: "/academy/terms" },
+};

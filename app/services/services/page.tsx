@@ -21,9 +21,9 @@ import { faqs, pricing, siteUrl } from "@services/lib/services";
  */
 
 export const metadata: Metadata = {
-  title: "Services — Build, Grow, Automate, Operate | Temahux",
+  title: "Services — Build, Grow, Automate, Operate",
   description:
-    "Four practices: Build, Grow, Automate and Operate. Web development from ₹3,000, branding and design from ₹8,000, AI automation from ₹15,000, social media management from ₹5,000/month and digital marketing from ₹10,000/month. Published INR entry points.",
+    "Four practices: Build, Grow, Automate and Operate. Web development from ₹3,000, branding and design from ₹8,000, AI automation from ₹15,000, social media management from ₹5,000/month and digital marketing from ₹10,000/month.",
   keywords:
     "web development India, branding and design, digital marketing retainer, social media management, AI automation, post-launch support",
   alternates: { canonical: "/services/services" },

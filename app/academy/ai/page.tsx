@@ -21,4 +21,8 @@ export default function AIPPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/ai" } };
+export const metadata = {
+  title: "AI Learning — Machine Learning, Generative AI & Responsible AI",
+  description: "Learn how AI works: from machine learning fundamentals to generative AI, prompt engineering, computer vision, and responsible AI practice.",
+  alternates: { canonical: "/academy/ai" },
+};

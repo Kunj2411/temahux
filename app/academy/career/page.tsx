@@ -21,4 +21,8 @@ export default function CareerPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/career" } };
+export const metadata = {
+  title: "Career Readiness — Skills, Portfolio & Interview Prep",
+  description: "Prepare for a future in tech with TEMAHUX Academy. Build skills, create a portfolio, practice DSA, and develop interview readiness.",
+  alternates: { canonical: "/academy/career" },
+};

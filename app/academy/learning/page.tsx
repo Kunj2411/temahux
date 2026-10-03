@@ -21,4 +21,8 @@ export default function LearningPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/learning" } };
+export const metadata = {
+  title: "Learning — From Curiosity to Mastery",
+  description: "TEMAHUX learning combines guided instruction, practice, projects, and reflection to help students build momentum over time.",
+  alternates: { canonical: "/academy/learning" },
+};

@@ -19,4 +19,8 @@ export default function FAQPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/faq" } };
+export const metadata = {
+  title: "FAQ — Questions About TEMAHUX Academy",
+  description: "Answers to common questions about how TEMAHUX approaches learning, projects, and technology education.",
+  alternates: { canonical: "/academy/faq" },
+};

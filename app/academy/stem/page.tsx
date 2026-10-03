@@ -21,4 +21,8 @@ export default function STEMPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/stem" } };
+export const metadata = {
+  title: "STEM Learning — Science, Technology, Engineering & Maths",
+  description: "Explore science, technology, engineering, mathematics, and creative problem solving through challenge-based learning at TEMAHUX Academy.",
+  alternates: { canonical: "/academy/stem" },
+};

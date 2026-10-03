@@ -19,4 +19,8 @@ export default function ResourcesPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/resources" } };
+export const metadata = {
+  title: "Resources — Tools & Guides for Technology Learners",
+  description: "Supporting materials to help TEMAHUX learners revisit ideas, learn faster, and deepen understanding beyond the classroom.",
+  alternates: { canonical: "/academy/resources" },
+};

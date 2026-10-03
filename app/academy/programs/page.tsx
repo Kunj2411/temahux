@@ -4,10 +4,10 @@ import { ProgramBrowser } from "@academy/components/program-browser";
 import { getPrograms } from "@academy/lib/data/catalog";
 
 export const metadata: Metadata = {
-  title: "Programs",
+  title: "Learning Programs — STEM, Coding, Robotics & AI",
   description: "Explore structured TEMAHUX learning programs across STEM, coding, robotics, and AI. Programs from ₹49.",
   alternates: { canonical: "/academy/programs" },
-  openGraph: { title: "Programs | TEMAHUX Academy", description: "Structured pathways for learning, building, and growing with technology." },
+  openGraph: { title: "Learning Programs — STEM, Coding, Robotics & AI | TEMAHUX Academy", description: "Structured pathways for learning, building, and growing with technology." },
 };
 
 export default async function ProgramsPage() {

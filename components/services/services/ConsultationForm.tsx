@@ -192,7 +192,7 @@ export default function ConsultationForm() {
         ) : null}
         {status === "error" ? (
           <span className="text-text">
-            {process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ? <>Something went wrong while submitting the form. Please try again, or email <a className="underline" href={contact.emailHref}>{contact.email}</a>.</> : <>Online form delivery is not configured. Email <a className="underline" href={contact.emailHref}>{contact.email}</a> instead.</>}
+            Something went wrong while submitting the form. Please try again, or email <a className="underline" href={contact.emailHref}>{contact.email}</a>.
           </span>
         ) : null}
       </p>

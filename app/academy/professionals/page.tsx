@@ -24,4 +24,8 @@ export default function ProfessionalsPage() {
   );
 }
 
-export const metadata = { alternates: { canonical: "/academy/professionals" } };
+export const metadata = {
+  title: "For Professionals — AI Literacy & Technical Upskilling",
+  description: "Professional learners at TEMAHUX Academy build AI literacy, systems thinking, and applied innovation skills through practical projects.",
+  alternates: { canonical: "/academy/professionals" },
+};

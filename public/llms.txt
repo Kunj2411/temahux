@@ -1,0 +1,70 @@
+# TEMAHUX
+
+> Temahux builds digital products, websites, software, AI solutions and automation systems for businesses and institutions. The ecosystem includes a Services division, an Academy, and a Products portfolio.
+
+## Main Site
+
+- Homepage: https://www.temahux.com/
+
+## Services
+
+Temahux Services provides web development, branding and design, digital marketing, social media management, AI automation, and post-launch support.
+
+- Services home: https://www.temahux.com/services
+- All services: https://www.temahux.com/services/services
+- Build (websites, apps, e-commerce): https://www.temahux.com/services/services/build
+- Grow (brand, SEO, marketing): https://www.temahux.com/services/services/grow
+- Automate (AI, workflows): https://www.temahux.com/services/services/automate
+- Operate (support, maintenance): https://www.temahux.com/services/services/operate
+- Pricing: https://www.temahux.com/services/services/pricing
+- Process: https://www.temahux.com/services/services/process
+- Web Development: https://www.temahux.com/services/services/web-development
+- AI Automation: https://www.temahux.com/services/services/ai-automation
+- Branding & Design: https://www.temahux.com/services/services/branding-design
+- Digital Marketing: https://www.temahux.com/services/services/digital-marketing
+- Social Media Management: https://www.temahux.com/services/services/social-media-management
+- Contact: https://www.temahux.com/services/contact
+- Start a Project: https://www.temahux.com/services/services/contact-consultation
+- About: https://www.temahux.com/services/about
+- Vision: https://www.temahux.com/services/vision
+- Architecture: https://www.temahux.com/services/architecture
+- Industries: https://www.temahux.com/services/industries
+- Portfolio: https://www.temahux.com/services/portfolio
+- Insights: https://www.temahux.com/services/insights
+
+## Products
+
+Digital product explorations focused on education and institutional workflows.
+
+- Products home: https://www.temahux.com/services/products
+- University OS: https://www.temahux.com/services/products/university-os
+- Paper Checking AI: https://www.temahux.com/services/products/paper-checking-ai
+- LMS: https://www.temahux.com/services/products/lms
+
+## Academy
+
+TEMAHUX Academy is a STEM, coding, AI, robotics, and project-based learning ecosystem for students and future builders.
+
+- Academy home: https://www.temahux.com/academy
+- Programs: https://www.temahux.com/academy/programs
+- Classes: https://www.temahux.com/academy/classes
+- Roadmaps: https://www.temahux.com/academy/roadmaps
+- Learning: https://www.temahux.com/academy/learning
+- Practice: https://www.temahux.com/academy/practice
+- Projects: https://www.temahux.com/academy/projects
+- STEM: https://www.temahux.com/academy/stem
+- AI: https://www.temahux.com/academy/ai
+- Robotics: https://www.temahux.com/academy/robotics
+- AR / VR: https://www.temahux.com/academy/ar-vr
+- Career: https://www.temahux.com/academy/career
+- How it Works: https://www.temahux.com/academy/how-it-works
+- Pricing: https://www.temahux.com/academy/pricing
+- Sign Up: https://www.temahux.com/academy/signup
+- Contact: https://www.temahux.com/academy/contact
+- About: https://www.temahux.com/academy/about
+
+## Contact
+
+- Email: kunj.joshi@temahux.com
+- Phone: +91 9104578807
+- Location: Gandhinagar, India
