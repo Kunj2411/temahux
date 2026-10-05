@@ -25,7 +25,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/resources",
     "/roadmaps",
     "/robotics",
-    "/signup",
     "/stem",
     "/students",
     "/terms",

@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: "https://www.temahux.com/", lastModified, changeFrequency: "monthly", priority: 1 },
+    { url: "https://www.temahux.com/what-is-temahux", lastModified, changeFrequency: "monthly", priority: 0.9 },
     ...servicesSitemap(),
     ...academySitemap(),
   ];

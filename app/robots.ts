@@ -5,10 +5,15 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/academy/admin/", "/academy/login/", "/academy/admin", "/academy/login"],
+        disallow: [
+          "/academy/admin/",
+          "/academy/admin",
+          "/academy/login/",
+          "/academy/login",
+          "/academy/signup",
+        ],
       },
     ],
     sitemap: "https://www.temahux.com/sitemap.xml",
-    host: "https://www.temahux.com",
   };
 }

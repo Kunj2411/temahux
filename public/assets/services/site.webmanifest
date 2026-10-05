@@ -1,14 +1,14 @@
 {
-  "name": "Temahux",
-  "short_name": "Temahux",
+  "name": "TEMAHUX",
+  "short_name": "TEMAHUX",
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "/assets/services/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/assets/services/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
@@ -16,5 +16,5 @@
   "theme_color": "#2869ed",
   "background_color": "#F7F7F5",
   "display": "standalone",
-  "start_url": "/"
+  "start_url": "/services"
 }

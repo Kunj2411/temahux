@@ -58,6 +58,6 @@ export const brand = {
   name: "TEMAHUX",
   line: "where everything is possible.",
   email: "kunj.joshi@temahux.com",
-  site: "https://temahux.com",
+  site: "https://www.temahux.com",
   location: "Gandhinagar, India",
 } as const;

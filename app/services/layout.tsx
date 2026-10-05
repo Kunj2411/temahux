@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: siteTitle, description: siteDescription },
   openGraph: {
     type: "website",
-    siteName: "Temahux",
+    siteName: "TEMAHUX",
     title: siteTitle,
     description: siteDescription,
   },
@@ -50,23 +50,13 @@ export default function ServicesLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Temahux",
-            url: "https://www.temahux.com/services",
-            logo: "https://www.temahux.com/assets/services/favicon.svg",
+            name: "TEMAHUX",
+            alternateName: "Temahux",
+            url: "https://www.temahux.com/",
+            logo: "https://www.temahux.com/temahux-symbol.png",
             email: "kunj.joshi@temahux.com",
             telephone: "+91 9104578807",
             address: { "@type": "PostalAddress", addressLocality: "Gandhinagar", addressCountry: "IN" },
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "Temahux Services",
-            url: "https://www.temahux.com/services",
           }),
         }}
       />

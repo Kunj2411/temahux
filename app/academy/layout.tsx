@@ -35,6 +35,24 @@ export const metadata: Metadata = {
 export default function AcademyLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className={`${geistSans.variable} ${geistMono.variable}`}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "TEMAHUX Academy",
+            alternateName: "Temahux Academy",
+            url: "https://www.temahux.com/academy",
+            logo: "https://www.temahux.com/assets/academy/temahux-symbol.png",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "TEMAHUX",
+              url: "https://www.temahux.com/",
+            },
+          }),
+        }}
+      />
       <div className="academy-site">
         <SiteHeader />
         <main>{children}</main>

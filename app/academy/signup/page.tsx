@@ -15,4 +15,5 @@ export const metadata = {
   title: "Sign Up — Start Learning at TEMAHUX Academy",
   description: "Create your TEMAHUX Academy account to explore learning pathways, track your progress, and build a portfolio of real projects.",
   alternates: { canonical: "/academy/signup" },
+  robots: { index: false, follow: true },
 };
